@@ -1,0 +1,16 @@
+.navbar {
+	height: 50px;
+	width: 100%;
+	background: $blue;
+}
+
+ul.nav-list li {
+	float: right;
+	display: inline-block;
+	padding-right: 40px;
+}
+
+ul.nav-list li a{
+	color: white;
+}
+

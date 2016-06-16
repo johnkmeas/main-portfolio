@@ -1,0 +1,28 @@
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+.navbar {
+  height: 50px;
+  width: 100%;
+  background: blue; }
+
+ul.nav-list li {
+  float: right;
+  display: inline-block;
+  padding-right: 40px; }
+
+ul.nav-list li a {
+  color: white; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto; }
+
+section {
+  min-width: 100%;
+  height: 100vh;
+  background: orange;
+  margin-top: 10px; }

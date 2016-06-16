@@ -1,0 +1,15 @@
+$orange: orange;
+$blue: blue;
+$lt: white;
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+@import 'partial/nav';
+@import 'partial/layout';
+@import 'partial/media-query';
