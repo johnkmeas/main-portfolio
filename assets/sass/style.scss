@@ -2,6 +2,15 @@ $orange: orange;
 $blue: blue;
 $lt: white;
 
+$ribbon-color: #b5ad8d;
+$lt-blue: #a9cbd7;
+$blue: #59a2d0;
+$topaz: #edc769;
+$dirty-yw: #edc769;
+$reddish: #dc7255;
+$drk-green: #404d41;
+$grey: #8c938e;
+
 li {
 	list-style-type: none;
 }
@@ -12,4 +21,6 @@ a {
 
 @import 'partial/nav';
 @import 'partial/layout';
+@import 'partial/grid';
+@import 'partial/writing';
 @import 'partial/media-query';

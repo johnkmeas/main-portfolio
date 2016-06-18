@@ -7,16 +7,50 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="//normalize-css.googlecode.com/svn/trunk/normalize.css">
 	<link rel="stylesheet" href="dist/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
-<body class='container'>
-<header>
-	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-	</nav>
+<body data-spy="scroll" data-offset="0" data-target=".navbar">
 
-</header>
+	<header>
+	<nav class="nav" role="navigation"></nav>
+		<!-- Checkbox to show/hide the navigation menu -->
+		<input type="checkbox" name="menu" value="toggle" id="toggle">
+		<!-- navigation menu container -->
+		<section id="menu">
+	    	<!-- Lable for #showmenu to hide the menu/uncheck the checkbox -->
+	   		<label class="toggle" for="toggle"><img src="img/close-menu-icon.png" class="menu-close hiding" alt=""><img src="img/menu-icon.png" class="menu-open" alt=""></label>
 
+	   	<!-- Menu content -->
+	    	<nav class="navbar menuContent"></nav>
+		</section>
+	<!-- /#menu -->
+	</header>
+	<div class="splash-img"></div>
+<div class="site-wrap container">
+	<div class="logo"></div>
+    <!-- insert the rest of your page markup here -->
+<section id="about">
+
+	<h1 class="heading">Lorem ipsum dolor sit amet</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, voluptatum consequatur dicta ullam odit blanditiis at fugiat suscipit temporibus maxime laboriosam debitis ipsam a provident delectus iure! Quia, maiores quo!</p>
+</section>
+<section id="portfolio">
+	<h1 class="center">Here's some of my work</h1>
+</section>
+<section id="skills">
+	<h1 class="center">Skills and knowledge</h1>
+</section>
+<section id="contact">
+	<h1 class="center">Get in touch with me</h1>
+</section>
+
+
+
+
+</div>
 	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-	<script src="js/data.js"></script>	
+	<script src="js/jquery.easing.1.3.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/scroll.js"></script>	
 </body>
 </html>
