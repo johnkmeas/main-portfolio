@@ -1,13 +1,61 @@
+.flexible {
+	display: flex;
+}
+
 .portfolio-container {
-    display: flex;
+    @extend .flexible;
     flex-flow: column wrap;
 
-	align-content: flex-start;
+}
+
+.portfolio-description  {
+	width: 50%;
 }
 
 #icon-bundle {
-    display: flex;
+    @extend .flexible;
 	flex-flow: row wrap;
 	justify-content: space-around;
-	margin: 20px 0;
+	align-items: flex-start;
+	margin: 0;
 }
+
+#skills-container {
+    @extend .flexible;
+	 flex-flow: row wrap;
+	 justify-content: center;
+	 align-items: center;
+}
+
+ul.skills-list {
+	order: -1;
+	margin:0 auto;
+
+}
+
+.skills-image {
+	width: 50%;
+	height: auto;
+}
+
+.contact-container {
+	@extend .flexible;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin: 10% 10%;
+}
+
+.contact-image {
+	width: 50%;
+}
+
+.contact-list {
+	width: 40%;
+}
+
+footer img {
+	width: 100%;
+	margin: 0 auto;
+}
+

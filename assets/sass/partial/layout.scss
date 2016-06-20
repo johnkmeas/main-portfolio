@@ -1,68 +1,64 @@
-body {
-	min-width: 100%;
-	background: $ribbon-color;
-}
-
-.container {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: space-around;
-	max-width: 960px;
-	margin: 0 auto;
-
-}
 
 section {
-	min-width: 100%;
-	height: auto;
+	padding-top: 40px;
 }
 
 #about {
-	margin-top: 75%;
-
-}
-
-#portfolio {
-
-	background: $ribbon-color;
-}
-
-#skills {
-	background: $reddish;
+	margin: 0;
+	margin-top: 100vh;
+	background: lighten($ribbon-color, 10%);
 }
 
 
 #contact {
-	background: $lt-blue;
+	height: 100vh;
 }
 
-
-
-.logo {
+#portfolio, #skills, #contact, #about {
+	margin-top: 20px;
 
 }
 
 .splash-img {
-	top: -6vh;
 	max-width: 100%;
 	position: relative;
 }
+
 .splash-img img {
 	position: absolute;
 	width: 100%;
+	height: auto;
 	display: block;
 	margin: 0 auto;
-	height: auto;
 	z-index: -1000;
 }
 
+.main-header {
+	width: 100%;
+	position: relative;
+	top: 50vh;
+	@extend .flexible;
+  	display: flex;
+  	flex-flow: column wrap;
+  	align-items: center;
+  	justify-content: center;
+}
 .logo img{
 	top: 50vh;
-	position: relative;
 	width: 100%;
 	max-width: 640px;
-	display: block;
-	margin: 0 auto;
-	z-index: -100;
+
+}
+
+button{
+	border: none;
+  	outline: none;
+	background: $blue;
+	width: 122px;
+	height: 48px;
+}
+
+button a {
+	color: white;
+	font-size: 1.4em;
 }

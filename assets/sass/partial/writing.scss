@@ -1,6 +1,21 @@
 body {
-	font-family: 'Roboto', sans-serif;
+	font: 16px/1.6em 'Roboto', sans-sarif;
 }
+
+h1{
+	top: 40%;
+	padding: 4px;
+
+}
+
+ul.contact-list li a {
+	color: white;
+}
+
+#about p {
+	padding: 20px;
+}
+
 
 .center {
 	text-align: center;
@@ -10,6 +25,10 @@ body {
 	padding: 20px;
 }
 
+.portfolio-description p {		
+	aligh-text: center;
+}
+
 ul.skills-list li {
-	padding: 10px;
+	padding: 5px;
 }

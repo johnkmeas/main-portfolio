@@ -1,27 +1,32 @@
+.nav-extend {
+    position: fixed;
+}
+
 
 .nav {
-	position: fixed;
-    width: 100%;
-	height: 60px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  @extend .nav-extend;
+  @extend .width-margin;
+  display: block;
+  height: 60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 	background: $drk-green;
-    margin: 0 auto;
- 
+  z-index: 1000;
 }
 
 .nav-list {
-	position: fixed;
+  margin-top: -40px;
 	height: 100vh;
-	width: 260px;
-    background: lighten($drk-green, 10%);
+	width: 160px;
+  background: lighten($drk-green, 10%);
+
 
 }
 
 nav ul {
-    padding-top: 100px;
+  padding-top: 80px;
 }
 
 ul.nav-list li a{
@@ -34,8 +39,6 @@ ul.nav-list li a{
     float: right;
     text-align: right;
 }
-
-
 
 
 ul.nav-list li a {
@@ -93,7 +96,7 @@ ul.nav-list li a:hover:before {
 
 #menu {
     display: block;
-    width: 300px;
+    width: 200px;
     min-height: 100%;
     top: 0;
     z-index: 9999;
@@ -102,14 +105,14 @@ ul.nav-list li a:hover:before {
 
 #menu  .toggle {
     top: 0;
-    left: 300px;
+    left: 200px;
     padding:10px;
     padding-left: 14px;
     position: absolute;
 }
 
 .menu-open {
-    background: #303A2F;
+    background: #404d41;
 }
 
 
@@ -127,7 +130,7 @@ img.menu-open, img.menu-close {
 
 /* Pushing the Menu off the canves */
 #menu {
-    left: -300px; /* must be the same as the width of the menu */
+    left: -200px; /* must be the same as the width of the menu */
     -webkit-transition: left 1s;
     transition: left 1s;
 }
