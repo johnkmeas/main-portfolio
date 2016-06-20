@@ -134,7 +134,7 @@
 
 	bio.contacts.display();
 
-    $('a.page-scroll, button.call-action').bind('click', function(event) {
+    $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
@@ -142,9 +142,10 @@
         event.preventDefault();
   		$( "#toggle" ).trigger( "click" );        
     });
+    $("img.menu-close").toggle( "show" );
     $("#toggle").click(function() {
   		$(".menu-open").toggle( "blind" );
-  		$("img.menu-close").toggleClass('rotated');
+  		$("img.menu-close").toggle( "show" ).toggleClass('rotated');
   		$(".nav-list").toggleClass('nav-colored');
 	 
 	});
@@ -154,23 +155,7 @@
         $(this).attr("src", $(this).data(device));
     });
   
-var stickyNavTop = $('.nav').offset().top;
- 
-var stickyNav = function(){
-var scrollTop = $(window).scrollTop();
-      
-if (scrollTop > stickyNavTop) { 
-    $('.nav').addClass('sticky');
-} else {
-    $('.nav').removeClass('sticky'); 
-}
-};
- 
-stickyNav();
- 
-$(window).scroll(function() {
-    stickyNav();
-});
+
 
 
 })();

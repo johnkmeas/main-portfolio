@@ -95,7 +95,6 @@ button a {
   font-size: 1.4em; }
 
 .sticky {
-  position: fixed;
   width: 100%;
   left: 0;
   top: 0;
@@ -185,10 +184,7 @@ ul.nav-list li a:hover:before {
   left: 200px;
   padding: 10px;
   padding-left: 14px;
-  position: absolute; }
-
-.menu-open {
-  background: #404d41; }
+  position: fixed; }
 
 .toggle img {
   position: absolute; }
@@ -284,7 +280,7 @@ footer img {
     transition: left 1s; }
   #menu .toggle {
     top: 0;
-    left: 160px;
+    left: 0px;
     padding: 10px; } }
 
 @media only screen and (min-width: 321px) and (max-width: 640px) {

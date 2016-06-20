@@ -1,5 +1,5 @@
 .sticky {
-    position: fixed;
+  
     width: 100%;
     left: 0;
     top: 0;
@@ -111,11 +111,11 @@ ul.nav-list li a:hover:before {
     left: 200px;
     padding:10px;
     padding-left: 14px;
-    position: absolute;
+    position: fixed;
 }
 
 .menu-open {
-    background: #404d41;
+  
 }
 
 
