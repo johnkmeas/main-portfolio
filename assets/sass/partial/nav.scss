@@ -4,8 +4,8 @@
 
 
 .nav {
-  @extend .nav-extend;
-  @extend .width-margin;
+  position: fixed;
+  width:100%;
   display: block;
   height: 60px;
   top: 0;

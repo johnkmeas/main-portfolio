@@ -7,7 +7,7 @@ body {
   max-width: 100%;
   margin: 0 auto; }
 
-.width-margin, .nav {
+.width-margin {
   width: 100%;
   margin: 0 auto; }
 
@@ -94,10 +94,12 @@ button a {
   color: white;
   font-size: 1.4em; }
 
-.nav-extend, .nav {
+.nav-extend {
   position: fixed; }
 
 .nav {
+  position: fixed;
+  width: 100%;
   display: block;
   height: 60px;
   top: 0;
