@@ -5,11 +5,44 @@ body {
 h1{
 	top: 40%;
 	padding: 4px;
+	color: $nes-red;
+}
 
+
+.brand h3 {
+  float: right;
+  padding-right: 40px;
+  color: lighten($ribbon-color, 10%);
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.nav-list li, .contact-list li {
+	list-style-type: none;
+}
+
+#portfolio h1 {
+	padding-bottom: 25px;
+}
+
+#skills h1 {
+	padding-bottom: 30px;
+}
+
+p, li {
+	color: $drk-green;
+}
+
+ul.contact-list li  {
+	padding: 20px;
 }
 
 ul.contact-list li a {
-	color: white;
+	font-size: 2em;
+	color: $nes-red;
 }
 
 #about p {
@@ -31,4 +64,16 @@ ul.contact-list li a {
 
 ul.skills-list li {
 	padding: 5px;
+}
+
+footer {
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+	background: $drk-green;
+	bottom: 0;
+}
+
+footer	p {
+  color: lighten($ribbon-color, 10%);
 }

@@ -17,27 +17,27 @@
 		},
 	portfolio : [
 		[	'wordpress-picture', 
-			'https://www.sitepoint.com/community/t/what-is-a-gutter/8580', 
+			'https://www.digitalstencil.ca', 
 			"This is a wordpress website in development. Wordpress site from scratch. All original, content, design, illustration."
 			],
 		
 		[	'portf', 
-			'link1', 
-			"Frontend single page portfolio website. "
+			'https://johnkmeas.github.io', 
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam eaque, neque obcaecati expedita nam, aperiam nulla culpa necessitatibus temporibus odit dolores, nostrum veniam at! Itaque neque deserunt sint alias omnis!Frontend single page portfolio website. "
 			],
 		[	'map', 
-			'link', 
+			'https://johnkmeas.github.io/neighborhoodmap', 
 			"Simple application that filters locations of some favourite places to work. Integrates the Four Square API to show nearest coffee shop fo each location."
 			]
 	],
 	skills : [
 
 		"Proficient with HTML, CSS/SASS, Javascript and jQuery.",
-		'Understanding of PHP, enough to build a Wordpress site from scratch.', 
+		'Understanding of PHP, able to modify wordpress theme a Wordpress theme or build from scratch.', 
 		'Comfortable in the terminal and using Git',
 		'Speeds things up with  Gulp',
 		'Familiar with AngularJS, Ruby and the liquid template language',
-		'Ftp and website migration',
+		'Experienced with FTIP and website migration',
 		'Knowledge of SEO and Website Optimization',
 		'Bonus: Adobe Photoshop and Illustrator'
 	],
@@ -76,8 +76,8 @@
 	nav.list();
 
 	bio.display = function() {
-		console.log(bio.name);
-		//$("#about").append(bio.name).append(bio.role);
+		$("nav.brand, h3").append(bio.name);
+		$("footer p").prepend(bio.name)
 	}
 
 	bio.display();
