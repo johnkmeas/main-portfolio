@@ -270,6 +270,9 @@ footer img {
     max-width: 260px; }
   .portfolio-description {
     width: 300px; }
+  .nav {
+    height: 10vh;
+    top: inherit; }
   .nav-list {
     height: 100vh;
     width: 100px; }
