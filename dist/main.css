@@ -58,8 +58,7 @@ section {
   margin-top: 20px; }
 
 .splash-img {
-  max-width: 100%;
-  position: relative; }
+  max-width: 100%; }
 
 .splash-img img {
   position: absolute;
@@ -181,7 +180,7 @@ ul.nav-list li a:hover:before {
 
 #menu .toggle {
   top: 0;
-  left: 200px;
+  left: 0px;
   padding: 10px;
   padding-left: 14px;
   position: fixed; }
@@ -279,7 +278,6 @@ footer img {
     -webkit-transition: left 1s;
     transition: left 1s; }
   #menu .toggle {
-    top: 0;
     left: 0px;
     padding: 10px; } }
 
@@ -304,8 +302,6 @@ footer img {
     -webkit-transition: left 1s;
     transition: left 1s; }
   #menu .toggle {
-    top: 0;
-    left: 160px;
     padding: 10px; } }
 
 @media only screen and (min-width: 641px) and (max-width: 820px) {
