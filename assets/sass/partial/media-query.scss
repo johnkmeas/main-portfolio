@@ -4,7 +4,7 @@
 @media only screen and (max-width: 320px) {
 	
 	#about {
-		margin-top: 62vh;
+		margin-top: 40vh;
 	}
 	.splash-img img {
 		top: 50px;
@@ -43,7 +43,7 @@
 @media only screen and(min-width: 321px) and (max-width: 640px) {
 
 	#about {
-		margin-top: 70vh;
+		margin-top: 50vh;
 	}
 
 	.splash-img img {
@@ -77,10 +77,10 @@
 	}	
 }
 	
-@media only screen and (min-width : 641px) and (max-width : 820px) {
+@media only screen and (min-width : 768px) and (max-width : 820px) {
 	
 	#about {
-		margin-top: 62vh;
+		margin-top: 30vh;
 	}
 	.splash-img img {
 		top: 50px;
@@ -95,13 +95,13 @@
 
 }
 
-@media only screen and (min-width : 821px) and (max-width : 1024px) {
+@media only screen and (min-width : 1024px) and (max-width : 1439px) {
 	.container {
 		max-width: 960px;
 	}
 
 	#about {
-		margin-top: 100vh;
+		margin-top: 60vh;
 	}
 
 	.splash-img img {
@@ -116,7 +116,7 @@
 	}	
 }
 
-@media only screen and (min-width : 1025px) and (max-width : 1500px) {
+@media only screen and (min-width : 1440px) {
 	.container {
 		max-width: 960px;
 	}

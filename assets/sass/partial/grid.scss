@@ -39,14 +39,12 @@ ul.skills-list {
 	height: auto;
 }
 
-.contact-container {
-	@extend .flexible;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	align-items: flex-start;
-	margin: 10% 10%;
-}
 
-.contact-image {
-	width: 50%;
+.splash-img img {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	z-index: -1000;
 }

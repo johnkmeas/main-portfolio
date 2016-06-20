@@ -7,7 +7,8 @@
 	mobileSplashImg : 'img/images/mobile-splash.jpg',
 	skillsImg : 'img/nes-shopify.png',
 	contactImg : 'img/images/tshirt.svg',
-	logo : 'img/theme-specialist-logo-wht.png',
+	logo : 'img/images/shopify-guru.svg',
+	footerMobile : 'img/images/footer-img.jpg',
 	contacts : {
 		mobile : '604.831.5646',
 		email : 'johnkmeas@gmail.com',
@@ -61,7 +62,8 @@
 	portfolioBundle = '<div id="icon-bundle"><div class="img-linked"><a href="%data%"><img src="img/%data2%.jpg" class="portfolio-icon" alt=""/></a></div><div class="portfolio-description"><p>%data3%</p></div></div>',
 	logo = '<img src="%data%" alt="" />',
 	splashImage = '<img src="" data-mobile="%data%" data-desktop="%data2%"/>',
-	skillsImage = "<img src='%data%' class='skills-image' alt='skills-image'/>";
+	skillsImage = "<img src='%data%' class='skills-image' alt='skills-image'/>",
+	responsiveImg = '<img class="footer-background" src="" data-mobile="%data%" data-desktop="%data2%"/>';
 	
 	nav.list = function() {
 		var navItem, insertNav;
@@ -87,6 +89,8 @@
 		$('.logo').append(logoInit);
 		var splashInit = splashImage.replace('%data%', bio.mobileSplashImg).replace("%data2%", bio.splashImg);
 		$('.splash-img').append(splashInit);
+		var footerInit = responsiveImg.replace('%data%', bio.footerMobile);
+		$('.footer-image').append(footerInit);
 	}
 
 	ImageDisplay();
@@ -147,9 +151,9 @@
   		$(".menu-open").toggle( "blind" );
   		$("img.menu-close").toggle( "show" ).toggleClass('rotated');
   		$(".nav-list").toggleClass('nav-colored');
-	 
 	});
 
+    
     var device = $(window).innerWidth() > 480 ? "desktop" : "mobile";
     $("img").each(function() {
         $(this).attr("src", $(this).data(device));

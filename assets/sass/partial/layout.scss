@@ -40,7 +40,7 @@ section {
 .main-header {
 	width: 100%;
 	position: relative;
-	top: 50vh;
+	top: 30vh;
 	@extend .flexible;
   	display: flex;
   	flex-flow: column wrap;
@@ -51,6 +51,29 @@ section {
 	top: 50vh;
 	width: 100%;
 	max-width: 640px;
+
+}
+
+#contact {
+	position: absolute;
+	margin: 10% 10%;
+}
+
+.contact-container {
+	margin-top: 35vh;
+}
+
+.contact-image {
+	width: 50%;
+}
+
+.footer-image {
+	margin-top: 25vh;
+	position: absolute;
+	overflow: hidden;
+	width: 100vw;
+}
+.footer-background {
 
 }
 
