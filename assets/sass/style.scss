@@ -1,0 +1,46 @@
+$orange: orange;
+$lt: white;
+
+$ribbon-color: #b5ad8d;
+$lt-blue: #a9cbd7;
+$blue: #59a2d0;
+$topaz: #edc769;
+$dirty-yw: #edc769;
+$reddish: #dc7255;
+$drk-green: #404d41;
+$grey: #8c938e;
+
+body {
+	margin: 0;
+	min-width: 100%;
+	background: $ribbon-color;
+}
+
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+
+}
+
+.width-margin {
+	width:100%;
+	margin: 0 auto;
+}
+
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+@import 'partial/writing';
+@import 'partial/layout';
+@import 'partial/nav';
+@import 'partial/grid';
+
+@import 'partial/media-query';

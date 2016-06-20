@@ -1,0 +1,64 @@
+
+section {
+	padding-top: 40px;
+}
+
+#about {
+	margin: 0;
+	margin-top: 100vh;
+	background: lighten($ribbon-color, 10%);
+}
+
+
+#contact {
+	height: 100vh;
+}
+
+#portfolio, #skills, #contact, #about {
+	margin-top: 20px;
+
+}
+
+.splash-img {
+	max-width: 100%;
+	position: relative;
+}
+
+.splash-img img {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	z-index: -1000;
+}
+
+.main-header {
+	width: 100%;
+	position: relative;
+	top: 50vh;
+	@extend .flexible;
+  	display: flex;
+  	flex-flow: column wrap;
+  	align-items: center;
+  	justify-content: center;
+}
+.logo img{
+	top: 50vh;
+	width: 100%;
+	max-width: 640px;
+
+}
+
+button{
+	border: none;
+  	outline: none;
+	background: $blue;
+	width: 122px;
+	height: 48px;
+}
+
+button a {
+	color: white;
+	font-size: 1.4em;
+}
