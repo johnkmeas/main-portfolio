@@ -94,13 +94,15 @@ button a {
   color: white;
   font-size: 1.4em; }
 
-.nav-extend {
-  position: fixed; }
-
-.nav {
+.sticky {
   position: fixed;
   width: 100%;
-  display: block;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0; }
+
+.nav {
   height: 60px;
   top: 0;
   left: 0;
@@ -271,8 +273,7 @@ footer img {
   .portfolio-description {
     width: 300px; }
   .nav {
-    height: 10vh;
-    top: inherit; }
+    height: 10vh; }
   .nav-list {
     height: 100vh;
     width: 100px; }

@@ -1,12 +1,15 @@
-.nav-extend {
+.sticky {
     position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
 }
 
 
 .nav {
-  position: fixed;
-  width:100%;
-  display: block;
+
   height: 60px;
   top: 0;
   left: 0;
