@@ -10,16 +10,15 @@ section {
 }
 
 
-#contact {
-	height: 100vh;
-}
+
 
 #skills {
-	background: lighten($blue, 10%);
+	background: $dirty-yw;
 }
 
 #portfolio, #skills, #contact, #about {
 	margin-top: 20px;
+	margin-bottom: 40px;
 
 }
 
@@ -55,23 +54,20 @@ section {
 }
 
 #contact {
-	position: absolute;
 	margin: 10% 10%;
 }
 
-.contact-container {
-	margin-top: 35vh;
-}
 
 .contact-image {
 	width: 50%;
 }
 
 .footer-image {
-	margin-top: 25vh;
+		margin-top: 10vh;
 	position: absolute;
 	overflow: hidden;
-	width: 100vw;
+	z-index: -100;
+
 }
 .footer-background {
 
@@ -92,5 +88,5 @@ button a {
 
 footer {
   text-align: center;
-  margin-top: 5%;
+	margin-top: 105vh;
 }

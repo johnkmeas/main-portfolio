@@ -2,6 +2,20 @@
 	display: flex;
 }
 
+.about-container {
+    @extend .flexible;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.about-container p{
+	width: 40%;
+
+}
+
+.shirt-image {
+	width: 40%;
+}
 .portfolio-container {
     @extend .flexible;
     flex-flow: column wrap;
@@ -22,7 +36,7 @@
 
 #skills-container {
     @extend .flexible;
-	 flex-flow: row wrap;
+	 flex-flow: column wrap;
 	 justify-content: center;
 	 align-items: center;
 }

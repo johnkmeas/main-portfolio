@@ -3,11 +3,23 @@ body {
 }
 
 h1{
+	font-size: 2em;
 	top: 40%;
 	padding: 4px;
 	color: $nes-red;
+	line-height: 1.3em;
 }
 
+p {
+	line-height: 1.5em;
+}
+
+strong {
+    font-weight: 800;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    color: lighten($nes-red, 10%);
+}
 
 .brand h3 {
   float: right;
@@ -16,6 +28,7 @@ h1{
 }
 
 a {
+	color: white;
 	text-decoration: none;
 }
 
@@ -35,9 +48,11 @@ a {
 p, li {
 	color: $drk-green;
 }
+
 ul.contact-list {
 	float: right;
 }
+
 ul.contact-list li  {
 	padding: 20px;
 }
@@ -60,8 +75,17 @@ ul.contact-list li a {
 	padding: 20px;
 }
 
-.portfolio-description p {		
-	aligh-text: center;
+#icon-bundle {
+	padding-bottom: 60px;
+}
+
+.demo-link {
+	color: lighten($ribbon-color, 30%);
+}
+
+.portfolio-meta p {
+	font-size: 0.8em;
+	color: lighten($drk-green, 15%);
 }
 
 ul.skills-list li {

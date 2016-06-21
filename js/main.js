@@ -6,9 +6,10 @@
 	splashImg : 'img/desktop.jpg',
 	mobileSplashImg : 'img/images/mobile-splash.jpg',
 	skillsImg : 'img/nes-shopify.png',
-	contactImg : 'img/images/tshirt.svg',
+	shirtImg : 'img/images/tshirt.svg',
 	logo : 'img/images/shopify-guru.svg',
 	footerMobile : 'img/images/footer-img.jpg',
+	footerDesktop : 'img/footer-desktop.jpg',
 	contacts : {
 		mobile : '604.831.5646',
 		email : 'johnkmeas@gmail.com',
@@ -17,30 +18,57 @@
 		location : 'Surrey BC, Canada'
 		},
 	portfolio : [
-		[	'wordpress-picture', 
+		[	'img/wordpress-picture.jpg', 
 			'https://www.digitalstencil.ca', 
-			"This is a wordpress website in development. Wordpress site from scratch. All original, content, design, illustration."
+			"This is a wordpress website that’s still in development. I coded it from scratch and it will serve as a platform to find freelance design and development work in the future.",
+			"HTML | CSS/SASS | PHP | Javascript",
+			"MaterializeCSS | jQuery",
+			"Photoshop | Illustrator | Gulp",
+			"https://github.com/johnkmeas/wp-haiku"
 			],
 		
-		[	'portf', 
+		[	'img/portf.jpg', 
 			'https://johnkmeas.github.io', 
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam eaque, neque obcaecati expedita nam, aperiam nulla culpa necessitatibus temporibus odit dolores, nostrum veniam at! Itaque neque deserunt sint alias omnis!Frontend single page portfolio website. "
+			"This is a single page scrolling site I created to display some of the student projects I completed while study with Udacity. The fun part was creating the parallax splash image of myself hanging from a tree.",
+			"HTML | CSS | Javascript",
+			"Bootstrap | jQuery",
+			"Photoshop | Grunt",
+			"https://github.com/johnkmeas/johnkmeas.github.io"
 			],
-		[	'map', 
+		[	'img/map.jpg', 
 			'https://johnkmeas.github.io/neighborhoodmap', 
-			"Simple application that filters locations of some favourite places to work. Integrates the Four Square API to show nearest coffee shop fo each location."
-			]
+			"I Built this simple application to help me decide on dog walking locations.\
+			It has animated drop down marks on a map and popup windows to display location information and nearest coffee shop. I used KnockoutJS to instantly update the frontend when the data model changes based user input.",
+			"HTML | CSS | Javascript",
+			"Bootstrap | jQuery",
+			"Grunt",
+			"https://github.com/johnkmeas/neighborhoodmap"
+			],
+		[	'img/desktop-potf.jpg',
+			"https://johnkmeas.github.io/shopify-impress",
+			"I built this single page site with no CSS frameworks. The majority of the content\
+			is dynamically added to the DOM using jQuery.\
+			It incorporates some original illustrations to represent my personality. \
+			I thought it would be fun to use part of a nintendo controller for the menu \
+			icon because it resembled the familiar hamburger icon \
+			and as a closing icon I used the nintendo control pad.",
+			"HTML | CSS/SASS | Javascript",
+			"jQuery",
+			"Photoshop | Illustrator | Gulp",
+			"https://github.com/johnkmeas/shopify-impress"
+		]
 	],
 	skills : [
 
 		"Proficient with HTML, CSS/SASS, Javascript and jQuery.",
-		'Understanding of PHP, able to modify wordpress theme a Wordpress theme or build from scratch.', 
-		'Comfortable in the terminal and using Git',
-		'Speeds things up with  Gulp',
+		'Understanding of PHP, able to modify wordpress themes or build from scratch.', 
+		'Comfortable in the terminal using git and npm',
+		'Automated workflow with Gulp',
 		'Familiar with AngularJS, Ruby and the liquid template language',
-		'Experienced with FTIP and website migration',
+		'Experienced with FTP and website migration',
 		'Knowledge of SEO and Website Optimization',
-		'Bonus: Adobe Photoshop and Illustrator'
+		'Responsive Design and free drawing skills',
+		'Bonus: Adobe Photoshop, Illustrator, Ableton, and 20 years of guitar playing'
 	],
 	summary : 'Junior Web Developer specializing in front end development. Experience with responsive design, website optimization, object oriented programming, MVC/MV* design pattern, client-side scripting and test-driven developement.'+
 	'Well versed in HTML5, CSS3, Javascript, jQuery, Photoshop and Illustrator.',
@@ -52,15 +80,20 @@
 		]	
 	},
 	nav = ['about', 'portfolio', 'skills', 'contact'],
-	contactContainer = '<div class="contact-container"><ul class="contact-list"></ul><img src="%data%" class="contact-image" alt=""/></div>',
+	contactContainer = '<div class="contact-container"><ul class="contact-list"></ul></div>',
 	contactFormatted = '<li><a href="%data%">%data2%</a></li>',
+	contactEmail = '<li><a href="MAILTO:%data%">%data2%</a></li>',
 	listItem = '<li>%data%</li>',
 	link = '<li><a class="page-scroll" href="#%data%">%data2%</a></li>',
 	skillsContainer = '<div id="skills-container">%data%</div>',
 	skillsList  = '<ul class="skills-list"></ul>',
 	portfolioContainer = '<div class="portfolio-container"></div>',
-	portfolioBundle = '<div id="icon-bundle"><div class="img-linked"><a href="%data%"><img src="img/%data2%.jpg" class="portfolio-icon" alt=""/></a></div><div class="portfolio-description"><p>%data3%</p></div></div>',
+	portfolioBundle = '<div id="icon-bundle"><div class="img-linked"><a href="%data%"><img src="%data2%" class="portfolio-icon" alt=""/></a></div>\
+	<div class="portfolio-description"><p>%data3%</p><a href="%data7%" class="demo-link">DEMO</a>  |  <a href="%data8%" class="github-link">GITHUB</a>\
+	<div class="portfolio-meta"><p>Languages:  %data4%</p>\
+	<p>Frameworks/Libraries:  %data5%</p><p>Tools:  %data6%</p></div></div></div>',
 	logo = '<img src="%data%" alt="" />',
+	shirtImage = '<img src="%data%"" alt="" class="shirt-image"/>',
 	splashImage = '<img src="" data-mobile="%data%" data-desktop="%data2%"/>',
 	skillsImage = "<img src='%data%' class='skills-image' alt='skills-image'/>",
 	responsiveImg = '<img class="footer-background" src="" data-mobile="%data%" data-desktop="%data2%"/>';
@@ -89,7 +122,9 @@
 		$('.logo').append(logoInit);
 		var splashInit = splashImage.replace('%data%', bio.mobileSplashImg).replace("%data2%", bio.splashImg);
 		$('.splash-img').append(splashInit);
-		var footerInit = responsiveImg.replace('%data%', bio.footerMobile);
+		var shirtInit = shirtImage.replace('%data%', bio.shirtImg);
+		$('.about-container').append(shirtInit);
+		var footerInit = responsiveImg.replace('%data%', bio.footerMobile).replace('%data2%', bio.footerDesktop);
 		$('.footer-image').append(footerInit);
 	}
 
@@ -97,14 +132,20 @@
 
 	bio.portfolio.Init = function() {
 		$("#portfolio").append(portfolioContainer);
-		var portfolioPiece, portfolioLink, portfolioText, Icon;
+		var portfolioPiece, portfolioLink, portfolioText, metaLang, metaFrame, metaTool, portfolioGit, iconPort;
 		for(var i = 0; i < bio.portfolio.length; i++){
 			portfolioPiece = bio.portfolio[i][0];
 			portfolioLink = bio.portfolio[i][1];
 			portfolioText = bio.portfolio[i][2];
-			Icon = portfolioBundle.replace("%data%", portfolioLink).replace("%data2%", portfolioPiece).replace("%data3%", portfolioText);
-			$(".portfolio-container").append(Icon);
-			console.log(bio.portfolio[i]);
+			metaLang = bio.portfolio[i][3];
+			metaFrame = bio.portfolio[i][4];
+			metaTool = bio.portfolio[i][5];
+			portfolioGit = bio.portfolio[i][6];
+			iconPort = portfolioBundle.replace("%data%", portfolioLink).replace("%data2%", portfolioPiece)
+			.replace("%data3%", portfolioText).replace("%data4%", metaLang).replace("%data5%", metaFrame)
+			.replace("%data6%", metaTool).replace("%data7%", portfolioLink).replace("%data8%", portfolioGit);
+			$(".portfolio-container").append(iconPort);
+			console.log(portfolioGit);
 		}
 		
 	}
@@ -129,10 +170,10 @@
  		var contactImgInit = contactContainer.replace("%data%", bio.contactImg);
  		$('#contact').append(contactImgInit);
 		//var contactNum = contactFormatted.replace('%data%', bio.contacts.mobile).replace('%data2%', bio.contacts.mobile);
-		var contactEmail = contactFormatted.replace('%data%', bio.contacts.email).replace('%data2%', 'Email');
+		var contactEmailInit = contactEmail.replace('%data%', bio.contacts.email).replace('%data2%', 'Email');
 		var contactLinkedin = contactFormatted.replace('%data%', bio.contacts.linkedin).replace('%data2%', 'Linkedin');
 		var contactgit = contactFormatted.replace('%data%', bio.contacts.github).replace('%data2%', 'Github');;			
-		$('.contact-list').append(contactEmail)
+		$('.contact-list').append(contactEmailInit)
 		.append(contactLinkedin).append(contactgit);
 	}
 
