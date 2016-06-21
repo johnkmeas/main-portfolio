@@ -92,7 +92,7 @@
 	<div class="portfolio-description"><p>%data3%</p><a href="%data7%" class="demo-link">DEMO</a>  |  <a href="%data8%" class="github-link">GITHUB</a>\
 	<div class="portfolio-meta"><p>Languages:  %data4%</p>\
 	<p>Frameworks/Libraries:  %data5%</p><p>Tools:  %data6%</p></div></div></div>',
-	logo = '<img src="%data%" alt="" />',
+	logo = '<img class="logo-image animate-logo" src="%data%" alt="" />',
 	shirtImage = '<img src="%data%"" alt="" class="shirt-image"/>',
 	splashImage = '<img src="" data-mobile="%data%" data-desktop="%data2%"/>',
 	skillsImage = "<img src='%data%' class='skills-image' alt='skills-image'/>",
