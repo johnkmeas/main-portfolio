@@ -1,6 +1,24 @@
-# This is a Responsive Single page 
+# Make me your Shopify Theme Specialist!
 
-I built it from the ground up with HTML, CSS/SASS and jQuery. The majority of the content being displayed is dynamically outputted to the DOM using jQuery. It's a good way to stay organized and not have to repeat myself with writing out the html for every item. I've also used jQuery to add animation to the menu icons and also determine which images get loaded based on the size of the browser window. I'm sure with more experience, I will find ways improve my implementation of jQuery.
+----
+## This is my Single Page Site
+
+I've built this site with HTML, CSS and jQuery. I've created all the illustrations using Photoshop and Illustrator.
+
+##Where jQuery is Used
+
+* Inserts data into html elements and then append to the DOM
+* Create smooth scrolling effect between sections when a link in the navigation is trigger
+* Triggers animation event menu when it's clicked
+* Detects browser screen width and determines the image source based on the width
 
 
-Check out the demo[https://johnkmeas.github.io/shopify-impress]
+##SASS and Flexbox
+I started using SASS recently to separate and organize my css files and with partials. I love using colour variables and 
+
+
+I've made some illustrations and arranged it to look like a work table that represents my balance of creativity and hardwork that drives my passion for web technologies. 
+
+
+## Check out the Demo
+* [demo site](https://johnkmeas.github.io/shopify-impress)

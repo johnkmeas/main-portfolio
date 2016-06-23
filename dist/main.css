@@ -49,7 +49,7 @@ strong {
   font-weight: 800;
   font-size: 1.4em;
   line-height: 1.5em;
-  color: #c17e78; }
+  color: #af5952; }
 
 .brand h1 {
   float: right;
@@ -92,7 +92,6 @@ ul.contact-list li a {
   text-align: center; }
 
 .main-article {
-  background: pink;
   padding: 20px; }
 
 #icon-bundle {
@@ -337,6 +336,7 @@ img.shirt-image {
   flex-flow: column wrap; }
 
 .portfolio-description {
+  margin-top: -2.5%;
   width: 50%; }
 
 #icon-bundle {

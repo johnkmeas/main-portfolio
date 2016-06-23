@@ -2,13 +2,13 @@
 	var bio = {
 	name : 'John Meas',
 	role : 'Front End Web Developer',
-	splashImg : 'img/desktop.jpg',
-	mobileSplashImg : 'img/images/mobile-splash.jpg',
-	skillsImg : 'img/nes-shopify.png',
+	splashImg : 'img/desktop-min.jpg',
+	mobileSplashImg : 'img/mobile-splash-min.jpg',
+	skillsImg : 'img/nes-shopify.svg',
 	shirtImg : 'img/images/tshirt.svg',
 	logo : 'img/images/shopify-guru.svg',
-	footerMobile : 'img/images/footer-img.jpg',
-	footerDesktop : 'img/footer-desktop.jpg',
+	footerMobile : 'img/footer-img-min.jpg',
+	footerDesktop : 'img/footer-desktop-min.jpg',
 	contacts : {
 		mobile : '604.831.5646',
 		email : 'johnkmeas@gmail.com',
@@ -17,7 +17,7 @@
 		location : 'Surrey BC, Canada'
 		},
 	portfolio : [
-		[	'img/wordpress-picture.jpg',
+		[	'img/wordpress-picture-min.jpg',
 			'https://digitalstencilca.ipage.com/wordpress.haiku',
 			'This is a wordpress website that\'s still in development I coded from scratch. I intend use it to obtain freelance design and development work in the future. All icon illustrations are original.',
 			'HTML | CSS/SASS | PHP | Javascript',
@@ -26,7 +26,7 @@
 			'https://github.com/johnkmeas/wp-haiku',
 			'Wordpress Theme Development | Responsive Design | Illustration'
 			],
-		[	'img/portf.jpg',
+		[	'img/portf-min.jpg',
 			'https://johnkmeas.github.io',
 			'This is a single page scrolling site I created to display some of the student projects I completed while studying with Udacity. The fun part was creating the parallax splash image of myself hanging from a tree.',
 			'HTML | CSS | Javascript',
@@ -35,16 +35,16 @@
 			'https://github.com/johnkmeas/johnkmeas.github.io',
 			'Single Page Portfolios Site | Responsive Design | Parallax'
 			],
-		[	'img/map.jpg',
+		[	'img/map-min.jpg',
 			'https://johnkmeas.github.io/neighborhoodmap',
 			'I Built this simple application to help me decide on places to walk my dog. It has animated drop down marks on a google map and popup windows to display location information along with the nearest coffee shop. I used KnockoutJS to instantly update the frontend when the data model changed based on the users search input.',
 			'HTML | CSS | Javascript',
-			'Bootstrap | jQuery',
+			'Bootstrap | jQuery | Knockout',
 			'Grunt',
 			'https://github.com/johnkmeas/neighborhoodmap',
 			'Web Application | Data-Binding | RESTful Api'
 			],
-		[	'img/desktop-potf.jpg',
+		[	'img/desktop-potf-min.jpg',
 			'https://johnkmeas.github.io/shopify-impress',
 			'I built this single page site with no CSS frameworks. The majority of the content is dynamically added to the DOM using jQuery. It incorporates some original illustrations to represent my personality. I thought it would be fun to use part of a nintendo controller for the menu icon because it resembled the familiar hamburger icon.',
 			'HTML | CSS/SASS | Javascript',
@@ -57,17 +57,18 @@
 	skills : [
 
 		'Proficient with HTML, CSS/SASS, Javascript and jQuery.',
-		'Experience with CSS Frameworks like Bootstrap, Materialize and Timber',
-		'Understanding of PHP and capable of modifying wordpress themes or building from scratch.',
-		'Comfortable in the terminal using git',
+		'Knowledge of CSS Frameworks like Bootstrap, Materialize and Timber',
+		'Understanding of PHP, capable of modifying wordpress themes or building from scratch',
+		'Comfortable in the terminal using Git',
 		'Automated workflow with Gulp',
-		'Familiar with AngularJS, Ruby and the liquid template language',
+		'Familiar with AngularJS, Ruby and the Liquid Template language',
 		'Dabbled in Python, Chuck(music programming) and p5js',
-		'Experienced with FTP and website migration',
+		'Experienced with FTP and @ebsite migration',
 		'Knowledge of SEO and Website Optimization',
-		'Responsive Design and illustration skills',
-		'Experience with facebook ad campaigns',
-		'Basic Counselling training',
+		'Responsive Design and Illustration skills',
+		'Experience with Facebook ad campaigns',
+		'Familiar with Printful(on-demand, online printing, fulfillment and shipping)',
+		'Basic counselling training',
 		'Bonus: Adobe Photoshop, Illustrator and Ableton'
 	],
 	summary : 'Junior Web Developer specializing in front end development. Experience with responsive design, website optimization, object oriented programming, MVC/MV* design pattern, client-side scripting and test-driven developement.'+
