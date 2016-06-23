@@ -2,15 +2,26 @@ body {
 	font: 16px/1.6em 'Roboto', sans-sarif;
 }
 
-h1{
+h2{
 	font-size: 2em;
 	top: 40%;
 	padding: 4px;
-	color: $nes-red;
+	color: $brown;
 	line-height: 1.3em;
 }
 
+#menu h2 {
+ 	padding-right: 65px;
+    text-align: right;
+    position: absolute;
+    top: inherit;
+    left: 60px;
+	color: lighten($ribbon-color, 10%);
+}
+
+
 p {
+	color: $brown;
 	line-height: 1.5em;
 }
 
@@ -18,10 +29,10 @@ strong {
     font-weight: 800;
     font-size: 1.4em;
     line-height: 1.5em;
-    color: lighten($nes-red, 10%);
+    color: lighten($nes-red, 16%);
 }
 
-.brand h3 {
+.brand h1 {
   float: right;
   padding-right: 40px;
   color: lighten($ribbon-color, 10%);
@@ -37,15 +48,19 @@ a {
 	list-style-type: none;
 }
 
-#portfolio h1 {
+.portfolio-heading {
 	padding-bottom: 25px;
 }
 
-#skills h1 {
+.skills-heading {
 	padding-bottom: 30px;
 }
 
-p, li {
+.contact-heading {
+	color: lighten($skills-yw, 10%);;
+}
+
+h3, p, li {
 	color: $drk-green;
 }
 
@@ -70,6 +85,7 @@ ul.contact-list li a {
 .center, .heading {
 	text-align: center;
 }
+
 .main-article {
 	background: pink;
 	padding: 20px;

@@ -2,10 +2,13 @@
 
 
 @media only screen and (max-width: 320px) {
-	
+	#menu h2 {
+	    left: 50px;
+	}	
 	#about {
 		margin-top: 40vh;
 	}
+	
 	.splash-img img {
 		top: 50px;
 	}
@@ -28,6 +31,7 @@
 	.portfolio-description  {
 		width: 300px;
 	}
+
 	ul.contact-list {
 		margin-top: 20vh;
 	}
@@ -35,10 +39,12 @@
 	.nav {
 		height: 10vh;
 	}
+
 	.nav-list {
 		height: 100vh;
 		width: 100px;
 	}
+
 	#menu {
 	   	left: -160px; /* must be the same as the width of the menu */
 	    -webkit-transition: left 1s;
@@ -49,6 +55,7 @@
 	    left: 0px;
 	    padding:10px;
 	}
+
 	.footer-image {
 		width: 100vw;
 	}

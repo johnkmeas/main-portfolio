@@ -13,8 +13,7 @@ body {
 .animate-logo {
   animation-name: move;
   animation-duration: 1.3s;
-  animation-timing-function: ease-out;
-  animation-delay: 0; }
+  animation-timing-function: ease-out; }
 
 @keyframes move {
   0% {
@@ -27,23 +26,32 @@ body {
 body {
   font: 16px/1.6em 'Roboto', sans-sarif; }
 
-h1 {
+h2 {
   font-size: 2em;
   top: 40%;
   padding: 4px;
-  color: #9e5049;
+  color: #625b49;
   line-height: 1.3em; }
 
+#menu h2 {
+  padding-right: 65px;
+  text-align: right;
+  position: absolute;
+  top: inherit;
+  left: 60px;
+  color: #c9c3ac; }
+
 p {
+  color: #625b49;
   line-height: 1.5em; }
 
 strong {
   font-weight: 800;
   font-size: 1.4em;
   line-height: 1.5em;
-  color: #b76a63; }
+  color: #c17e78; }
 
-.brand h3 {
+.brand h1 {
   float: right;
   padding-right: 40px;
   color: #c9c3ac; }
@@ -55,13 +63,16 @@ a {
 .nav-list li, .contact-list li {
   list-style-type: none; }
 
-#portfolio h1 {
+.portfolio-heading {
   padding-bottom: 25px; }
 
-#skills h1 {
+.skills-heading {
   padding-bottom: 30px; }
 
-p, li {
+.contact-heading {
+  color: #f4edd3; }
+
+h3, p, li {
   color: #404d41; }
 
 ul.contact-list {
@@ -118,7 +129,7 @@ section {
   background: #c9c3ac; }
 
 #skills {
-  background: #e0c37a; }
+  background: #eaddaa; }
 
 #portfolio, #skills, #contact, #about {
   margin-top: 20px;
@@ -139,9 +150,13 @@ section {
   width: 100%;
   position: relative;
   top: 30vh;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-flow: column wrap;
   flex-flow: column wrap;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: center;
   justify-content: center; }
 
 .logo img {
@@ -282,55 +297,69 @@ img.menu-open, img.menu-close {
 #menu {
   left: -200px;
   /* must be the same as the width of the menu */
-  -webkit-transition: left 1s;
   transition: left 1s; }
 
 /* Showing the menu then the Checkbox is checked */
 #toggle:checked + #menu {
   left: 0;
-  -webkit-transition: left 1s;
   /* Safari 3.1 to 6.0 */
   transition: left 1s; }
 
 .menu-close {
-  -webkit-transition: all 1.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
   transition: all 1.3s cubic-bezier(0.55, 0.085, 0.68, 0.53); }
 
 .rotated {
   transform: rotate(45deg); }
 
 .flexible, .main-header, .about-container, .portfolio-container, #icon-bundle, #skills-container {
+  display: -ms-flexbox;
   display: flex; }
 
 .about-container {
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -ms-flex-align: start;
+  -ms-grid-row-align: flex-start;
   align-items: flex-start; }
 
 .about-container p {
   width: 40%; }
 
-.shirt-image {
-  width: 40%; }
+img.shirt-image {
+  width: 40%;
+  -ms-flex-order: -2;
+  order: -2; }
 
 .portfolio-container {
+  -ms-flex-flow: column wrap;
   flex-flow: column wrap; }
 
 .portfolio-description {
   width: 50%; }
 
 #icon-bundle {
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -ms-flex-align: start;
+  -ms-grid-row-align: flex-start;
   align-items: flex-start;
   margin: 0; }
 
 #skills-container {
+  -ms-flex-flow: column wrap;
   flex-flow: column wrap;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
   align-items: center; }
 
 ul.skills-list {
+  -ms-flex-order: -1;
   order: -1;
   margin: 0 auto; }
 
@@ -348,6 +377,8 @@ ul.skills-list {
   z-index: -1000; }
 
 @media only screen and (max-width: 320px) {
+  #menu h2 {
+    left: 50px; }
   #about {
     margin-top: 40vh; }
   .splash-img img {
@@ -372,7 +403,6 @@ ul.skills-list {
   #menu {
     left: -160px;
     /* must be the same as the width of the menu */
-    -webkit-transition: left 1s;
     transition: left 1s; }
   #menu .toggle {
     left: 0px;
@@ -404,7 +434,6 @@ ul.skills-list {
   #menu {
     left: -160px;
     /* must be the same as the width of the menu */
-    -webkit-transition: left 1s;
     transition: left 1s; }
   #menu .toggle {
     padding: 10px; }
