@@ -51,17 +51,16 @@ section {
   	align-items: center;
   	justify-content: center;
 }
+
 .logo img{
 	top: 50vh;
 	width: 100%;
 	max-width: 640px;
-
 }
 
 #contact {
 	margin: 10% 10%;
 }
-
 
 .contact-image {
 	width: 50%;
@@ -72,7 +71,6 @@ section {
 	position: absolute;
 	overflow: hidden;
 	z-index: -100;
-
 }
 
 .footer-background {
@@ -93,6 +91,6 @@ button a {
 }
 
 footer {
-  text-align: center;
+  	text-align: center;
 	margin-top: 105vh;
 }

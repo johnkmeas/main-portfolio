@@ -3,7 +3,7 @@
 }
 
 .about-container {
-    @extend .flexible;
+	@extend .flexible;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: flex-start;
@@ -19,7 +19,7 @@
 
 img.shirt-image {
 	width: 40%;
-		order: -2;
+	order: -2;
 }
 
 p#text-under-shirt {

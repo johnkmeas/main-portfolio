@@ -24,7 +24,8 @@
 			'Materialize | jQuery',
 			'Photoshop | Illustrator | Gulp',
 			'https://github.com/johnkmeas/wp-haiku',
-			'Wordpress Theme Development | Responsive Design | Illustration'
+			'Wordpress Theme Development | Responsive Design | Illustration',
+			'wordpress site'
 			],
 		[	'img/portf-min.jpg',
 			'https://johnkmeas.github.io',
@@ -33,7 +34,8 @@
 			'Bootstrap | jQuery',
 			'Photoshop | Grunt',
 			'https://github.com/johnkmeas/johnkmeas.github.io',
-			'Single Page Portfolio Site | Responsive Design | Parallax'
+			'Single Page Portfolio Site | Responsive Design | Parallax',
+			'portfolio site'
 			],
 		[	'img/map-min.jpg',
 			'https://johnkmeas.github.io/neighborhoodmap',
@@ -41,8 +43,9 @@
 			'HTML | CSS | Javascript',
 			'Bootstrap | jQuery | Knockout',
 			'Grunt',
-			'https://github.com/johnkmeas/neighborhoodmap',
-			'Web Application | Data-Binding | RESTful API'
+			'https://github.com/johnkmeas/neighborhoodmap/tree/gh-pages',
+			'Web Application | Data-Binding | RESTful API',
+			'map application site'
 			],
 		[	'img/desktop-potf-min.jpg',
 			'https://johnkmeas.github.io/shopify-impress',
@@ -50,8 +53,9 @@
 			'HTML | CSS/SASS | Javascript',
 			'jQuery',
 			'Photoshop | Illustrator | Gulp',
-			'https://digitalstencilca.ipage.com/theme.specialist/',
-			'Single Page Scrolling Site | Responsive Design | Illustration'
+			'https://github.com/johnkmeas/shopify-impress/tree/gh-pages',
+			'Single Page Scrolling Site | Responsive Design | Illustration',
+			'single page scrolling site'
 		]
 	],
 	skills : [
@@ -88,12 +92,12 @@
 	skillsContainer = '<div id="skills-container">%data%</div>',
 	skillsList  = '<ul class="skills-list"></ul>',
 	portfolioContainer = '<div class="portfolio-container"></div>',
-	portfolioBundle = '<div id="icon-bundle"><div class="img-linked"><a href="%data%"><img src="%data2%" class="portfolio-icon" alt=""/></a></div><div class="portfolio-description"><h3>%data7%</h3><p>%data3%</p><a href="%data7%" class="demo-link">DEMO</a>  |  <a href="%data8%" class="github-link">GITHUB</a><div class="portfolio-meta"><p>Languages:  %data4%</p><p>Frameworks/Libraries:  %data5%</p><p>Tools:  %data6%</p></div></div></div>',
-	logo = '<img class="logo-image animate-logo" src="%data%" alt="" />',
-	shirtImage = '<img src="%data%"" alt="" class="shirt-image"/>',
-	splashImage = '<img src="" data-mobile="%data%" data-desktop="%data2%"/>',
-	skillsImage = '<img src="%data%" class="skills-image" alt="skills-image"/>',
-	responsiveImg = '<img class="footer-background" src="" data-mobile="%data%" data-desktop="%data2%"/>';
+	portfolioBundle = '<div id="icon-bundle"><div class="img-linked"><a href="%data%"><img src="%data2%" class="portfolio-icon" alt="thumbnail image of %data9%"/></a></div><div class="portfolio-description"><h3>%data7%</h3><p>%data3%</p><a href="%data7%" class="demo-link">DEMO</a>  |  <a href="%data8%" class="github-link">GITHUB</a><div class="portfolio-meta"><p>Languages:  %data4%</p><p>Frameworks/Libraries:  %data5%</p><p>Tools:  %data6%</p></div></div></div>',
+	logo = '<img class="logo-image animate-logo" src="%data%" alt="logo image" />',
+	shirtImage = '<img src="%data%"" alt="shirt with shopify logo" class="shirt-image"/>',
+	splashImage = '<img src="" data-mobile="%data%" data-desktop="%data2%" alt="main background image"/>',
+	skillsImage = '<img src="%data%" class="skills-image" alt="nintendo controller with shopify logo"/>',
+	responsiveImg = '<img class="footer-background" src="" data-mobile="%data%" data-desktop="%data2%" alt="footer background image"/>';
 
 	nav.list = function() {
 		var navItem, insertNav;
@@ -129,7 +133,8 @@
 
 	bio.portfolio.Init = function() {
 		$('#portfolio').append(portfolioContainer);
-		var portfolioTitle, portfolioPiece, portfolioLink, portfolioText, metaLang, metaFrame, metaTool, portfolioGit, iconPort;
+		var portfolioTitle, portfolioPiece, portfolioLink, portfolioText,
+		metaLang, metaFrame, metaTool, portfolioGit, portfolioAlt, iconPort;
 		for(var i = 0; i < bio.portfolio.length; i++){
 			portfolioPiece = bio.portfolio[i][0];
 			portfolioLink = bio.portfolio[i][1];
@@ -139,9 +144,10 @@
 			metaTool = bio.portfolio[i][5];
 			portfolioGit = bio.portfolio[i][6];
 			portfolioTitle = bio.portfolio[i][7];
+			portfolioAlt = bio.portfolio[i][8];
 			iconPort = portfolioBundle.replace('%data7%', portfolioTitle).replace('%data%', portfolioLink).replace('%data2%', portfolioPiece)
 			.replace('%data3%', portfolioText).replace('%data4%', metaLang).replace('%data5%', metaFrame)
-			.replace('%data6%', metaTool).replace('%data7%', portfolioLink).replace('%data8%', portfolioGit);
+			.replace('%data6%', metaTool).replace('%data7%', portfolioLink).replace('%data8%', portfolioGit).replace('%data9%', portfolioAlt);
 			$('.portfolio-container').append(iconPort);
 		}
 	};
@@ -188,7 +194,7 @@
 
     $('img.menu-close').toggle('show');
     $('#toggle').click(function() {
-  		$('.menu-open').toggle('blind');
+  		$('.menu-open').toggle('scale');
   		$('img.menu-close').toggle('show').toggleClass('rotated');
   		$('.nav-list').toggleClass('nav-colored');
 	});
@@ -200,10 +206,9 @@
 
  	var dWidth = $(window).width() * 0.8;
     $( "#dialog" ).dialog({
-    	title: "Front-End Web Development | Udacity",
 	    autoOpen: false,
 	    modal: true,
-	    width: dWidth,  
+	    width: dWidth,
 	    show: {
 	    	effect: "fold",
 	        duration: 1000
@@ -213,7 +218,7 @@
 	        duration: 1000
 	     }
     });
- 
+
     $( "#opener" ).click(function() {
       $( "#dialog" ).dialog( "open" );
     });

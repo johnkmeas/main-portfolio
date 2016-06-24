@@ -1,5 +1,4 @@
 .sticky {
-  
     width: 100%;
     left: 0;
     top: 0;
@@ -7,29 +6,25 @@
     border-top: 0;
 }
 
-
 .nav {
-
-  height: 60px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 	background: $drk-green;
-  z-index: 1000;
+    z-index: 1000;
 }
 
 .nav-list {
-  margin-top: -40px;
+    margin-top: -40px;
 	height: 100vh;
 	width: 160px;
-  background: lighten($drk-green, 10%);
-
-
+    background: lighten($drk-green, 10%);
 }
 
 nav ul {
-  padding-top: 80px;
+    padding-top: 80px;
 }
 
 ul.nav-list li a{
@@ -43,48 +38,45 @@ ul.nav-list li a{
     text-align: right;
 }
 
-
 ul.nav-list li a {
     letter-spacing: 0;
-
 }
 
 ul.nav-list li a:hover,
 ul.nav-list li a:active {
-  letter-spacing: 3px;
-  transition: all 280ms ease-in-out;
+    letter-spacing: 3px;
+    transition: all 280ms ease-in-out;
 }
 
 ul.nav-list li a:after,
 ul.nav-list li a:before {
-  backface-visibility: hidden;
-  border: 1px solid rgba(#fff, 0);
-  bottom: 0px;
-  content: " ";
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  transition: all 280ms ease-in-out;
-  width: 0;
+    backface-visibility: hidden;
+    border: 1px solid rgba(#fff, 0);
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
 }
 
 ul.nav-list li a:hover:after,
 ul.nav-list li a:hover:before {
-  backface-visibility: hidden;
-  border-color: #fff;
-  transition: width 350ms ease-in-out;
-  width: 70%;
+    backface-visibility: hidden;
+    border-color: #fff;
+    transition: width 350ms ease-in-out;
+    width: 70%;
 }
 
 ul.nav-list li a:hover:before {
-  bottom: auto;
-  top: 0;
-  width: 70%;
+    bottom: auto;
+    top: 0;
+    width: 70%;
 }
 .nav-colored {
     animation: color_change 1s ease-out;
     background: $drk-green;
-
 }
 
 @keyframes color_change {
@@ -95,7 +87,6 @@ ul.nav-list li a:hover:before {
         background: $drk-green; 
     }
 }
-
 
 #menu {
     display: block;
@@ -114,14 +105,9 @@ ul.nav-list li a:hover:before {
     position: fixed;
 }
 
-.menu-open {
-  
-}
-
-
 img.menu-open, img.menu-close {
-      width: 34px;
-      height: 40px;
+    width: 34px;
+    height: 40px;
 }
 
 .toggle img {
@@ -146,16 +132,12 @@ img.menu-open, img.menu-close {
     transition: left 1s;
 }
 
-
 .menu-close {
-  -webkit-transition: all 1.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-  transition:         all 1.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-
+    -webkit-transition: all 1.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transition:         all 1.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 
 }
 
 .rotated {
-  transform: rotate(45deg);
-
+    transform: rotate(45deg);
 }
-
