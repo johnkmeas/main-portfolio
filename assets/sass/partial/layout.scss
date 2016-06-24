@@ -8,6 +8,14 @@ section {
 	background: lighten($ribbon-color, 10%);
 }
 
+.ui-widget-header {
+	background: lighten($ribbon-color, 10%);
+	color: white;
+}
+
+.certificate-img {
+	width: 100%;
+}
 
 #skills {
 	background: $skills-yw;

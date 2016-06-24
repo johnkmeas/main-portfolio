@@ -19,9 +19,9 @@
 	portfolio : [
 		[	'img/wordpress-picture-min.jpg',
 			'https://digitalstencilca.ipage.com/wordpress.haiku',
-			'This is a wordpress website that\'s still in development I coded from scratch. I intend use it to obtain freelance design and development work in the future. All icon illustrations are original.',
+			'This is a wordpress website that I\'ve create from scratch. It\'s still under construction. I hope to use it to find freelance design and development work in the future. All icon illustrations are original.',
 			'HTML | CSS/SASS | PHP | Javascript',
-			'MaterializeCSS | jQuery',
+			'Materialize | jQuery',
 			'Photoshop | Illustrator | Gulp',
 			'https://github.com/johnkmeas/wp-haiku',
 			'Wordpress Theme Development | Responsive Design | Illustration'
@@ -33,20 +33,20 @@
 			'Bootstrap | jQuery',
 			'Photoshop | Grunt',
 			'https://github.com/johnkmeas/johnkmeas.github.io',
-			'Single Page Portfolios Site | Responsive Design | Parallax'
+			'Single Page Portfolio Site | Responsive Design | Parallax'
 			],
 		[	'img/map-min.jpg',
 			'https://johnkmeas.github.io/neighborhoodmap',
-			'I Built this simple application to help me decide on places to walk my dog. It has animated drop down marks on a google map and popup windows to display location information along with the nearest coffee shop. I used KnockoutJS to instantly update the frontend when the data model changed based on the users search input.',
+			'I built this simple application to help me decide on places to walk my dog. It has animated drop-down marks on a Google Map with popup windows that display location information, along with the name of the nearest coffee shop retrieved from the Foursquare API. I used KnockoutJS to instantly update the front-end whenever the data model is changed based on the users search input.',
 			'HTML | CSS | Javascript',
 			'Bootstrap | jQuery | Knockout',
 			'Grunt',
 			'https://github.com/johnkmeas/neighborhoodmap',
-			'Web Application | Data-Binding | RESTful Api'
+			'Web Application | Data-Binding | RESTful API'
 			],
 		[	'img/desktop-potf-min.jpg',
 			'https://johnkmeas.github.io/shopify-impress',
-			'I built this single page site with no CSS frameworks. The majority of the content is dynamically added to the DOM using jQuery. It incorporates some original illustrations to represent my personality. I thought it would be fun to use part of a nintendo controller for the menu icon because it resembled the familiar hamburger icon.',
+			'I built this single page site with no CSS frameworks. The majority of the content is dynamically added to the DOM using jQuery. It incorporates some original illustrations to represent my personality. I thought it would be fun to use part of a nintendo controller for the menu icon because it resembles the familiar hamburger icon.',
 			'HTML | CSS/SASS | Javascript',
 			'jQuery',
 			'Photoshop | Illustrator | Gulp',
@@ -55,17 +55,16 @@
 		]
 	],
 	skills : [
-
-		'Proficient with HTML, CSS/SASS, Javascript and jQuery.',
+		'Proficient with HTML, CSS/SASS, Javascript and jQuery',
 		'Knowledge of CSS Frameworks like Bootstrap, Materialize and Timber',
-		'Understanding of PHP, capable of modifying wordpress themes or building from scratch',
+		'Understanding of PHP -capable of modifying wordpress themes or building from scratch',
 		'Comfortable in the terminal using Git',
 		'Automated workflow with Gulp',
 		'Familiar with AngularJS, Ruby and the Liquid Template language',
 		'Dabbled in Python, Chuck(music programming) and p5js',
-		'Experienced with FTP and @ebsite migration',
+		'Experienced with FTP and Website migration',
 		'Knowledge of SEO and Website Optimization',
-		'Responsive Design and Illustration skills',
+		'Experience with Responsive Design and Illustration',
 		'Experience with Facebook ad campaigns',
 		'Familiar with Printful(on-demand, online printing, fulfillment and shipping)',
 		'Basic counselling training',
@@ -198,5 +197,26 @@
     $('img').each(function() {
         $(this).attr('src', $(this).data(device));
     });
+
+ 	var dWidth = $(window).width() * 0.8;
+    $( "#dialog" ).dialog({
+    	title: "Front-End Web Development | Udacity",
+	    autoOpen: false,
+	    modal: true,
+	    width: dWidth,  
+	    show: {
+	    	effect: "fold",
+	        duration: 1000
+	    	},
+	     hide: {
+	        effect: "blind",
+	        duration: 1000
+	     }
+    });
+ 
+    $( "#opener" ).click(function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+
 
 })();
