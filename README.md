@@ -1,7 +1,6 @@
-# Make me your Shopify Theme Specialist!
+# Main Portfolio
 
 ----
-## This is my Single Page Site
 
 I've built this site with HTML, CSS and jQuery. I've created all the illustrations using Photoshop and Illustrator.
 
@@ -20,4 +19,4 @@ The main hero image is a work table that represents my balance of creativity and
 
 
 ## Check out the Demo
-* [demo site](https://johnkmeas.github.io/shopify-impress)
+* [demo site](https://johnkmeas.github.io/main-portfolio)
