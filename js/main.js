@@ -4,9 +4,9 @@
 	role : 'Front End Web Developer',
 	splashImg : 'img/desktop-min.jpg',
 	mobileSplashImg : 'img/mobile-splash-min.jpg',
-	skillsImg : 'img/nes-shopify.svg',
-	shirtImg : 'img/images/tshirt.svg',
-	logo : 'img/images/shopify-guru.svg',
+	skillsImg : 'img/nes-name.svg',
+	shirtImg : 'img/shirt.svg',
+	logo : 'img/name-logo.svg',
 	footerMobile : 'img/footer-img-min.jpg',
 	footerDesktop : 'img/footer-desktop-min.jpg',
 	contacts : {
@@ -39,7 +39,7 @@
 			],
 		[	'img/map-min.jpg',
 			'https://johnkmeas.github.io/neighborhoodmap',
-			'I built this simple application to help me decide on places to walk my dog. It has animated drop-down marks on a Google Map with popup windows that display location information, along with the name of the nearest coffee shop retrieved from the Foursquare API. I used KnockoutJS to instantly update the front-end whenever the data model is changed based on the users search input.',
+			'I built this simple application to help me decide on places to walk my dog. It has animated drop-down marks on a Google Map with popup windows that display location information, along with the name of the nearest coffee shop retrieved from the Foursquare API. I used KnockoutJS to instantly update the front-end whenever the data model changes.',
 			'HTML | CSS | Javascript',
 			'Bootstrap | jQuery | Knockout',
 			'Grunt',
@@ -60,19 +60,17 @@
 	],
 	skills : [
 		'Proficient with HTML, CSS/SASS, Javascript and jQuery',
-		'Knowledge of CSS Frameworks like Bootstrap, Materialize and Timber',
+		'Knowledge of CSS Frameworks like Bootstrap and Materialize',
 		'Understanding of PHP -capable of modifying wordpress themes or building from scratch',
+		'Familiar with TDD using jasmine.js',
 		'Comfortable in the terminal using Git',
 		'Automated workflow with Gulp',
-		'Familiar with AngularJS, Ruby and the Liquid Template language',
 		'Dabbled in Python, Chuck(music programming) and p5js',
 		'Experienced with FTP and Website migration',
 		'Knowledge of SEO and Website Optimization',
 		'Experience with Responsive Design and Illustration',
 		'Experience with Facebook ad campaigns',
-		'Familiar with Printful(on-demand, online printing, fulfillment and shipping)',
-		'Basic counselling training',
-		'Bonus: Adobe Photoshop, Illustrator and Ableton'
+		'Bonus: Adobe Photoshop, Illustrator, Ableton and video production knowledge'
 	],
 	summary : 'Junior Web Developer specializing in front end development. Experience with responsive design, website optimization, object oriented programming, MVC/MV* design pattern, client-side scripting and test-driven developement.'+
 	'Well versed in HTML5, CSS3, Javascript, jQuery, Photoshop and Illustrator.',
@@ -95,7 +93,7 @@
 	portfolioBundle = '<div id="icon-bundle"><div class="img-linked"><a href="%data%"><img src="%data2%" class="portfolio-icon" alt="thumbnail image of %data9%"/></a></div><div class="portfolio-description"><h3>%data7%</h3><p>%data3%</p><a href="%data7%" class="demo-link">DEMO</a>  |  <a href="%data8%" class="github-link">GITHUB</a><div class="portfolio-meta"><p>Languages:  %data4%</p><p>Frameworks/Libraries:  %data5%</p><p>Tools:  %data6%</p></div></div></div>',
 	logo = '<img class="logo-image animate-logo" src="%data%" alt="logo image" />',
 	shirtImage = '<img src="%data%"" alt="shirt with shopify logo" class="shirt-image"/>',
-	splashImage = '<img src="" data-mobile="%data%" data-desktop="%data2%" alt="main background image"/>',
+	splashImage = '<img class="animate-splash" src="" data-mobile="%data%" data-desktop="%data2%" alt="main background image"/>',
 	skillsImage = '<img src="%data%" class="skills-image" alt="nintendo controller with shopify logo"/>',
 	responsiveImg = '<img class="footer-background" src="" data-mobile="%data%" data-desktop="%data2%" alt="footer background image"/>';
 

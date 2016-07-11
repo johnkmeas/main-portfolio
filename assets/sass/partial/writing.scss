@@ -10,12 +10,10 @@ h2{
 	line-height: 1.3em;
 }
 
-#menu h2 {
- 	padding-right: 65px;
-    text-align: right;
-    position: absolute;
-    top: inherit;
-    left: 60px;
+ p.menu-label {
+	font-size: 1.6em;
+	margin: 0;
+    padding-left: 40px;
 	color: lighten($ribbon-color, 10%);
 }
 

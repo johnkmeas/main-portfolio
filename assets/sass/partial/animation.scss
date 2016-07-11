@@ -1,3 +1,11 @@
+.hidden {
+    display: none;
+}
+
+.show {
+     display: block;
+}
+
 .animate-logo {
     animation-name: move;
     animation-duration: 1.3s; 
@@ -7,7 +15,24 @@
 @keyframes move {
     0% {
         opacity: 0;
-        transform: translate(0px, 200px) scale(0.3);
+        transform: translate(0px, 100px) scale(0.3);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px) scale(1);
+    }
+}
+
+.animate-splash {
+    animation-name: screen-move;
+    animation-duration: 1.3s; 
+    animation-timing-function: ease-out; 
+}
+
+@keyframes screen-move {
+    0% {
+        opacity: 0;
+        transform: translate(0px, -50px) scale(1.05);
     }
     100% {
         opacity: 1;

@@ -43,6 +43,7 @@ section {
 
 .main-header {
 	width: 100%;
+	height: 50vh;
 	position: relative;
 	top: 30vh;
 	@extend .flexible;
@@ -53,7 +54,7 @@ section {
 }
 
 .logo img{
-	top: 50vh;
+	margin-top: 50%;
 	width: 100%;
 	max-width: 640px;
 }
