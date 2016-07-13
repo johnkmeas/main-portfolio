@@ -71,3 +71,30 @@ ul.skills-list {
 	margin: 0 auto;
 	z-index: -1000;
 }
+
+.img-linked {
+	overflow: hidden;
+	transition-duration: 500ms;
+	transition-timing-function: ease-out	
+}
+
+.img-linked:hover {
+	transform: scale(1.05);
+	-webkit-box-shadow: 0px 10px 21px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 21px -8px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 21px -8px rgba(0,0,0,0.75);
+}
+
+.img-linked img {
+	transition-duration: 2s;
+	transition-timing-function: ease-out
+}
+
+.img-linked img:hover {
+	transform: scale(1.3);
+
+}
+
+.img-text {
+	position: relative;
+}

@@ -2,7 +2,7 @@
 	var bio = {
 	name : 'John Meas',
 	role : 'Front End Web Developer',
-	splashImg : 'img/desktop-min.jpg',
+	splashImg : 'img/ninja-desktop.jpg',
 	mobileSplashImg : 'img/mobile-splash-min.jpg',
 	skillsImg : 'img/nes-name.svg',
 	shirtImg : 'img/shirt.svg',
@@ -21,7 +21,7 @@
 			'https://digitalstencilca.ipage.com/wordpress.haiku',
 			'This is a wordpress website that I\'ve create from scratch. It\'s still under construction. I hope to use it to find freelance design and development work in the future. All icon illustrations are original.',
 			'HTML | CSS/SASS | PHP | Javascript',
-			'Materialize | jQuery',
+			'Materialize | jQuery | Wordpress',
 			'Photoshop | Illustrator | Gulp',
 			'https://github.com/johnkmeas/wp-haiku',
 			'Wordpress Theme Development | Responsive Design | Illustration',
@@ -61,16 +61,20 @@
 	skills : [
 		'Proficient with HTML, CSS/SASS, Javascript and jQuery',
 		'Knowledge of CSS Frameworks like Bootstrap and Materialize',
-		'Understanding of PHP -capable of modifying wordpress themes or building from scratch',
+		'Understanding of PHP - capable of modifying Wordpress themes or building from scratch',
 		'Familiar with TDD using jasmine.js',
 		'Comfortable in the terminal using Git',
-		'Automated workflow with Gulp',
+		'Familiar with automated workflow using Gulp',
 		'Dabbled in Python, Chuck(music programming) and p5js',
 		'Experienced with FTP and Website migration',
 		'Knowledge of SEO and Website Optimization',
-		'Experience with Responsive Design and Illustration',
+		'Experience with Responsive Design',
 		'Experience with Facebook ad campaigns',
-		'Bonus: Adobe Photoshop, Illustrator, Ableton and video production knowledge'
+		'Possess fine art skills such as drawing, printmaking and colour theory',
+		'Familiar with traditional animation techniques',
+		'Long time guitar player and enthusiast',
+		'Experience with Adobe Photoshop, Illustrator and Ableton',
+		'Experience with video production'
 	],
 	summary : 'Junior Web Developer specializing in front end development. Experience with responsive design, website optimization, object oriented programming, MVC/MV* design pattern, client-side scripting and test-driven developement.'+
 	'Well versed in HTML5, CSS3, Javascript, jQuery, Photoshop and Illustrator.',

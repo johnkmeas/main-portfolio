@@ -7,7 +7,8 @@ var cssmin = require('gulp-cssmin');
 var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('default', ['styles', 'combinecss','scripts', 'jquery'], function(){
-    gulp.watch('assets/**/*.scss', ['styles', 'combinecss']);
+    gulp.watch('assets/**/*.scss', ['styles']);
+    gulp.watch('dist/style.css', ['combinecss']);
     gulp.watch('js/**/*.js', ['scripts', 'jquery']);
 
 });
@@ -30,7 +31,7 @@ gulp.task('styles', function () {
 gulp.task('combinecss', function () {
  
     gulp.src(['dist/jquery-ui.min.css', 'dist/jquery-ui.structure.min.css', 
-        'dist/jquery-ui.theme.min.css', 'dist/main.css'])
+        'dist/jquery-ui.theme.min.css', 'dist/style.css'])
         .pipe(concat('all.min.css'))
         .pipe(cssmin())
         .pipe(gulp.dest('./dist/'));
