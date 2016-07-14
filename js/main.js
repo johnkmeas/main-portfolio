@@ -17,9 +17,9 @@
 		location : 'Surrey BC, Canada'
 		},
 	portfolio : [
-		[	'img/wordpress-picture-min.jpg',
+		[	'img/digital-stencil-thumbnail-min.jpg',
 			'https://digitalstencilca.ipage.com/wordpress.haiku',
-			'This is a wordpress website that I\'ve create from scratch. It\'s still under construction. I hope to use it to find freelance design and development work in the future. All icon illustrations are original.',
+			'This is a wordpress website that I\'ve create from scratch. It\'s still under construction and is filled with mostly dummy text at the moment. I hope to use it to find freelance design and development work in the future. All icon illustrations are original.',
 			'HTML | CSS/SASS | PHP | Javascript',
 			'Materialize | jQuery | Wordpress',
 			'Photoshop | Illustrator | Gulp',
@@ -29,7 +29,7 @@
 			],
 		[	'img/portf-min.jpg',
 			'https://johnkmeas.github.io',
-			'This is a single page scrolling site I created to display some of the student projects I completed while studying with Udacity. The fun part was creating the parallax splash image of myself hanging from a tree.',
+			'This is a single page scrolling site I created to display some of the student projects I completed while studying with Udacity. The fun part was creating a parallax effect with an image of myself attempting to pull a tree out from the earth... fortunately I failed.',
 			'HTML | CSS | Javascript',
 			'Bootstrap | jQuery',
 			'Photoshop | Grunt',
