@@ -48,12 +48,12 @@
 			'map application site'
 			],
 		[	'img/desktop-potf-min.jpg',
-			'https://johnkmeas.github.io/shopify-impress',
+			'https://johnkmeas.github.io/main-portfolio/',
 			'I built this single page site with no CSS frameworks. The majority of the content is dynamically added to the DOM using jQuery. It incorporates some original illustrations to represent my personality. I thought it would be fun to use part of a nintendo controller for the menu icon because it resembles the familiar hamburger icon.',
 			'HTML | CSS/SASS | Javascript',
 			'jQuery',
 			'Photoshop | Illustrator | Gulp',
-			'https://github.com/johnkmeas/shopify-impress/tree/gh-pages',
+			'https://github.com/johnkmeas/main-portfolio/tree/gh-pages',
 			'Single Page Scrolling Site | Responsive Design | Illustration',
 			'single page scrolling site'
 		]
@@ -99,7 +99,8 @@
 	shirtImage = '<img src="%data%"" alt="shirt with shopify logo" class="shirt-image"/>',
 	splashImage = '<img class="animate-splash" src="" data-mobile="%data%" data-desktop="%data2%" alt="main background image"/>',
 	skillsImage = '<img src="%data%" class="skills-image" alt="nintendo controller with shopify logo"/>',
-	responsiveImg = '<img class="footer-background" src="" data-mobile="%data%" data-desktop="%data2%" alt="footer background image"/>';
+	responsiveImg = '<img class="footer-background" src="" data-mobile="%data%" data-desktop="%data2%" alt="footer background image"/>',
+	insertPortfolio = {};
 
 	nav.list = function() {
 		var navItem, insertNav;
@@ -133,38 +134,49 @@
 
 	ImageDisplay();
 
-	bio.portfolio.Init = function() {
+	function Portfolio(title, img, alt, info, lang, frame, tools, weblink, git ) {
+		this.title = title;
+		this.img = img;
+		this.alt = alt;
+		this.info = info;
+		this.lang = lang;
+		this.frameworks = frame;
+		this.tools = tools;
+		this.weblink = weblink;
+		this.git = git;
+		insertPortfolio = portfolioBundle.replace('%data7%', title).replace('%data%', git)
+			.replace('%data2%', img).replace('%data3%', info).replace('%data4%', lang)
+			.replace('%data5%', frame).replace('%data6%', tools).replace('%data7%', git)
+			.replace('%data8%', weblink).replace('%data9%', alt);
+			return $('.portfolio-container').append(insertPortfolio);
+		console.log(insertPortfolio)
+	}	
+
+	bio.portfolio.init = function() {
 		$('#portfolio').append(portfolioContainer);
-		var portfolioTitle, portfolioPiece, portfolioLink, portfolioText,
-		metaLang, metaFrame, metaTool, portfolioGit, portfolioAlt, iconPort;
+		var portfolioSection;
 		for(var i = 0; i < bio.portfolio.length; i++){
-			portfolioPiece = bio.portfolio[i][0];
-			portfolioLink = bio.portfolio[i][1];
-			portfolioText = bio.portfolio[i][2];
-			metaLang = bio.portfolio[i][3];
-			metaFrame = bio.portfolio[i][4];
-			metaTool = bio.portfolio[i][5];
-			portfolioGit = bio.portfolio[i][6];
-			portfolioTitle = bio.portfolio[i][7];
-			portfolioAlt = bio.portfolio[i][8];
-			iconPort = portfolioBundle.replace('%data7%', portfolioTitle).replace('%data%', portfolioLink).replace('%data2%', portfolioPiece)
-			.replace('%data3%', portfolioText).replace('%data4%', metaLang).replace('%data5%', metaFrame)
-			.replace('%data6%', metaTool).replace('%data7%', portfolioLink).replace('%data8%', portfolioGit).replace('%data9%', portfolioAlt);
-			$('.portfolio-container').append(iconPort);
+			portfolioSection = new Portfolio(bio.portfolio[i][7], bio.portfolio[i][0], bio.portfolio[i][8], bio.portfolio[i][2],
+			bio.portfolio[i][3], bio.portfolio[i][4], bio.portfolio[i][5], bio.portfolio[i][6], bio.portfolio[i][1]);
 		}
 	};
 
-	bio.portfolio.Init();
+	bio.portfolio.init();
+
+	function Skills(skill){
+		this.skill = skill;
+		skillInit = listItem.replace('%data%', skill);
+		return $('.skills-list').append(skillInit);
+		//console.log(skillInit);
+	}
 
 	bio.skills.display = function() {
 		var skillsDone = skillsContainer.replace('%data%', skillsList),
 		skillsImageInit = skillsImage.replace('%data%', bio.skillsImg ),
-		skill, skillInit;
+		skilledIt, skillInit;
 		$('#skills').append(skillsDone);
 		for(var i = 0; i < bio.skills.length; i++){
-			skill = bio.skills[i];
-			skillInit = listItem.replace('%data%', skill);
-			$('.skills-list').append(skillInit);
+			skilledIt = new Skills(bio.skills[i]);
 		}
 		$('#skills-container').prepend(skillsImageInit);
 		console.log(bio.skills[0]);
@@ -185,6 +197,7 @@
 
 	bio.contacts.display();
 
+	//bind nav link to a click event to scroll to section
   	$('a.page-scroll').bind('click', function(event) {
      	var $anchor = $(this);
       	$('html, body').stop().animate({
@@ -194,19 +207,26 @@
   		$( '#toggle' ).trigger( 'click' );
   	});
 
+  	// hides the menu close button on initialize
     $('img.menu-close').toggle('show');
+
+    // swaps menu icons between open and close version when clicked
     $('#toggle').click(function() {
   		$('.menu-open').toggle('scale');
   		$('img.menu-close').toggle('show').toggleClass('rotated');
   		$('.nav-list').toggleClass('nav-colored');
 	});
 
+    //determines the img src for mobile and desktop
     var device = $(window).innerWidth() > 480 ? 'desktop' : 'mobile';
     $('img').each(function() {
         $(this).attr('src', $(this).data(device));
     });
 
+    // 2/5th of window width to be used in dialog method
  	var dWidth = $(window).width() * 0.8;
+
+ 	// jqeury modal window 
     $( "#dialog" ).dialog({
 	    autoOpen: false,
 	    modal: true,
@@ -221,9 +241,10 @@
 	     }
     });
 
+    // opens dialog when id is clicked
     $( "#opener" ).click(function() {
       $( "#dialog" ).dialog( "open" );
     });
 
-
+console.log(bio);
 })();
