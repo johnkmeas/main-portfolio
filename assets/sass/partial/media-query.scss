@@ -2,10 +2,14 @@
 	#menu h2 {
 	    left: 50px;
 	}
-
-	#about {
-		margin-top: 48%;
+	.brand h1 {
+	    font-size: 1.1em;
+	    padding: 10px 10px;
 	}
+	#portfolio{
+			margin-top: 48%;
+	}
+
 
 	.splash-img img {
 		top: 50px;
@@ -61,10 +65,14 @@
 	#menu h2 {
 	    left: 50px;
 	}
-
-	#about {
-		margin-top: 63%;
+	.brand h1 {
+	    font-size: 1.1em;
+	    padding: 10px 10px;
 	}
+	#portfolio{
+			margin-top: 63%;
+	}
+
 
 	.splash-img img {
 		top: 50px;
@@ -114,9 +122,10 @@
 	
 @media only screen and (min-width : 768px) and (max-width : 820px) {
 
-	#about {
-		margin-top: 14%;
+	#portfolio{
+			margin-top: 14%;
 	}
+
 
 	.splash-img img {
 		top: 50px;
@@ -140,10 +149,10 @@
 	.container {
 		max-width: 1024px;
 	}
-
-	#about {
-		margin-top: 35%;
+	#portfolio{
+			margin-top: 35%;
 	}
+
 
 	.splash-img img {
 		top: 50px;
@@ -163,10 +172,10 @@
 	.container {
 		max-width: 1024px;
 	}
-
-	#about {
-		margin-top: 44%;
+	#portfolio{
+			margin-top: 44%;
 	}
+
 
 	.footer-background {
 		width: 1024px;

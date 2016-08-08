@@ -33,6 +33,10 @@ gulp.task('combinecss', function () {
     gulp.src(['dist/jquery-ui.min.css', 'dist/jquery-ui.structure.min.css', 
         'dist/jquery-ui.theme.min.css', 'dist/style.css'])
         .pipe(concat('all.min.css'))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(cssmin())
         .pipe(gulp.dest('./dist/'));
         //.pipe(gulp.dest('./dist/css'));

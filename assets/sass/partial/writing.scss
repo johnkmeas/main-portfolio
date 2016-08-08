@@ -1,13 +1,12 @@
 body {
 	font: 16px/1.6em 'Roboto', sans-sarif;
 }
-
-h2{
-	font-size: 2em;
-	top: 40%;
-	padding: 4px;
+h1, h2 {
+	font-family: 'Playfair Display', serif;
+}
+section h1{
 	color: $brown;
-	line-height: 1.3em;
+
 }
 
  p.menu-label {
@@ -100,6 +99,9 @@ ul.contact-list li a {
 
 ul.skills-list li {
 	padding: 5px;
+	list-style: none;
+	text-align: center;
+	font-size: 1.2em;
 }
 
 footer {

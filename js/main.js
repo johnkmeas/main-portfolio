@@ -61,7 +61,7 @@
 	skills : [
 		'Proficient with HTML, CSS/SASS, Javascript and jQuery',
 		'Knowledge of CSS Frameworks like Bootstrap and Materialize',
-		'Understanding of PHP - capable of modifying Wordpress themes or building from scratch',
+		'Proficient with PHP - experience with modifying Wordpress themes or building from scratch',
 		'Familiar with TDD using jasmine.js',
 		'Comfortable in the terminal using Git',
 		'Familiar with automated workflow using Gulp',
@@ -70,11 +70,7 @@
 		'Knowledge of SEO and Website Optimization',
 		'Experience with Responsive Design',
 		'Experience with Facebook ad campaigns',
-		'Possess fine art skills such as drawing, printmaking and colour theory',
-		'Familiar with traditional animation techniques',
-		'Long time guitar player and enthusiast',
-		'Experience with Adobe Photoshop, Illustrator and Ableton',
-		'Experience with video production'
+		'Experience with Adobe Photoshop, Illustrator'
 	],
 	summary : 'Junior Web Developer specializing in front end development. Experience with responsive design, website optimization, object oriented programming, MVC/MV* design pattern, client-side scripting and test-driven developement.'+
 	'Well versed in HTML5, CSS3, Javascript, jQuery, Photoshop and Illustrator.',
@@ -114,19 +110,21 @@
 
 	nav.list();
 
+	// place my name in the header and footer
 	bio.display = function() {
-		$('h1').append(bio.name);
+		$('.brand > h1').append(bio.role);
 		$('footer p').prepend(bio.name);
 	};
 
 	bio.display();
 
+	// Loads all main images
 	var ImageDisplay = function(){
 		var logoInit = logo.replace('%data%', bio.logo);
 		$('.logo').append(logoInit);
 		var splashInit = splashImage.replace('%data%', bio.mobileSplashImg).replace('%data2%', bio.splashImg);
 		$('.splash-img').append(splashInit);
-		var shirtInit = shirtImage.replace('%data%', bio.shirtImg);
+		var shirtInit = shirtImage.replace('%data%', bio.skillsImg);
 		$('.about-container').append(shirtInit);
 		var footerInit = responsiveImg.replace('%data%', bio.footerMobile).replace('%data2%', bio.footerDesktop);
 		$('.footer-image').append(footerInit);
@@ -134,6 +132,7 @@
 
 	ImageDisplay();
 
+	// constructor function I use to create portfolio content
 	function Portfolio(title, img, alt, info, lang, frame, tools, weblink, git ) {
 		this.title = title;
 		this.img = img;
@@ -150,8 +149,10 @@
 			.replace('%data8%', weblink).replace('%data9%', alt);
 			return $('.portfolio-container').append(insertPortfolio);
 		console.log(insertPortfolio)
-	}	
+	}
 
+	// method loops through the portfolio array that's attached to the bio object
+	// and creates a new instance of the Portfolio Object  
 	bio.portfolio.init = function() {
 		$('#portfolio').append(portfolioContainer);
 		var portfolioSection;
@@ -163,10 +164,12 @@
 
 	bio.portfolio.init();
 
+	// Constructor function takes a single argument that's is used to replace the %data% string
+	// inside of a formatted <li> string and appends it to the skills list
 	function Skills(skill){
 		this.skill = skill;
 		skillInit = listItem.replace('%data%', skill);
-		return $('.skills-list').append(skillInit);
+		return $('.skills-list').append(skillInit).append('<br>');
 		//console.log(skillInit);
 	}
 
@@ -178,7 +181,7 @@
 		for(var i = 0; i < bio.skills.length; i++){
 			skilledIt = new Skills(bio.skills[i]);
 		}
-		$('#skills-container').prepend(skillsImageInit);
+
 		console.log(bio.skills[0]);
 	};
 
