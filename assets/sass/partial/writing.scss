@@ -21,14 +21,18 @@ p {
 	line-height: 1.5em;
 }
 
-strong {
+em{
     font-weight: 800;
-    font-size: 1.2em;
+    font-size: 1.3em;
     line-height: 1.5em;
-    color: lighten($nes-red, 5%);
+    color: $brown;
 }
 
 .brand h1 {
+	font-size: 1.3em;
+	font-weight: 300;
+	letter-spacing: 0.05em;
+	word-spacing: 0.1em;
   float: right;
   padding-right: 40px;
   color: lighten($ribbon-color, 10%);
@@ -98,7 +102,7 @@ ul.contact-list li a {
 }
 
 ul.skills-list li {
-	padding: 5px;
+	padding: 0px;
 	list-style: none;
 	text-align: center;
 	font-size: 1.2em;

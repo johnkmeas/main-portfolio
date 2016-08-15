@@ -23,7 +23,7 @@
 			'HTML | CSS/SASS | PHP | Javascript',
 			'Materialize | jQuery | Wordpress',
 			'Photoshop | Illustrator | Gulp',
-			'https://github.com/johnkmeas/wp-haiku',
+			'https://github.com/johnkmeas/wp-haiku/tree/master/wp-content/themes/learning',
 			'Wordpress Theme Development | Responsive Design | Illustration',
 			'wordpress site'
 			],
@@ -59,18 +59,10 @@
 		]
 	],
 	skills : [
-		'Proficient with HTML, CSS/SASS, Javascript and jQuery',
-		'Knowledge of CSS Frameworks like Bootstrap and Materialize',
-		'Proficient with PHP - experience with modifying Wordpress themes or building from scratch',
-		'Familiar with TDD using jasmine.js',
-		'Comfortable in the terminal using Git',
-		'Familiar with automated workflow using Gulp',
-		'Dabbled in Python, Chuck(music programming) and p5js',
-		'Experienced with FTP and Website migration',
-		'Knowledge of SEO and Website Optimization',
-		'Experience with Responsive Design',
-		'Experience with Facebook ad campaigns',
-		'Experience with Adobe Photoshop, Illustrator'
+		'HTML, CSS/SASS, Javascript, PHP',
+		'Liquid, Bootstrap, jQuery',
+		'Wordpress | Shopify', 
+		'Photoshop | Illustrator'
 	],
 	summary : 'Junior Web Developer specializing in front end development. Experience with responsive design, website optimization, object oriented programming, MVC/MV* design pattern, client-side scripting and test-driven developement.'+
 	'Well versed in HTML5, CSS3, Javascript, jQuery, Photoshop and Illustrator.',
