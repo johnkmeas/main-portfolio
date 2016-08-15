@@ -6,6 +6,9 @@
 	    font-size: 1.1em;
 	    padding: 10px 10px;
 	}
+	img.logo-image.animate-logo {
+		margin-top: -70px;
+	}
 	#portfolio{
 			margin-top: 48%;
 	}
@@ -69,8 +72,11 @@
 	    font-size: 1.1em;
 	    padding: 10px 10px;
 	}
+	img.logo-image.animate-logo {
+		margin-top: -100px;
+	}	
 	#portfolio{
-			margin-top: 63%;
+			margin-top: 70%;
 	}
 
 
@@ -122,10 +128,12 @@
 	
 @media only screen and (min-width : 768px) and (max-width : 820px) {
 
+	img.logo-image.animate-logo {
+		margin-top: -100px;
+	}
 	#portfolio{
 			margin-top: 14%;
 	}
-
 
 	.splash-img img {
 		top: 50px;

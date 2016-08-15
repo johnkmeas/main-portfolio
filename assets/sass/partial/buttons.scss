@@ -1,0 +1,18 @@
+button{
+	border: none;
+  	outline: none;
+	background: lighten($orange, 15%);
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	margin-top: 120px;
+	width: 200px;
+	height: 48px;
+	color: white;
+	font-size: 1.3em;
+	transition: 0.5s
+}
+button:hover{
+	background: lighten($orange, 25%);
+	transform: scale(1.1);
+}

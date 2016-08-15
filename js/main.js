@@ -73,7 +73,7 @@
 		'Design'
 		]
 	},
-	nav = ['about', 'portfolio', 'skills', 'contact'],
+	nav = ['portfolio', 'skills', 'about', 'contact'],
 	contactContainer = '<div class="contact-container"><ul class="contact-list"></ul></div>',
 	contactFormatted = '<li><a href="%data%">%data2%</a></li>',
 	contactEmail = '<li><a href="MAILTO:%data%">%data2%</a></li>',
@@ -199,8 +199,13 @@
         	scrollTop: $($anchor.attr('href')).offset().top
       	}, 1000, 'easeInOutExpo');
       	event.preventDefault();
-  		$( '#toggle' ).trigger( 'click' );
+
   	});
+  	
+  	//close nav list when linkn is clicked
+  	$('ul.nav-list li a.page-scroll').bind('click', function(event) {
+  		$( '#toggle' ).trigger( 'click' );
+  	});  	
 
   	// hides the menu close button on initialize
     $('img.menu-close').toggle('show');

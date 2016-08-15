@@ -51,7 +51,7 @@ section {
   	justify-content: center;
 }
 
-.logo img{
+img.logo-image.animate-logo {
 	width: 100%;
 	max-width: 640px;
 }
@@ -75,13 +75,6 @@ section {
 
 }
 
-button{
-	border: none;
-  	outline: none;
-	background: $blue;
-	width: 122px;
-	height: 48px;
-}
 
 button a {
 	color: white;
