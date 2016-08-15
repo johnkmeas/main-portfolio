@@ -201,7 +201,7 @@
       	event.preventDefault();
 
   	});
-  	
+
   	//close nav list when linkn is clicked
   	$('ul.nav-list li a.page-scroll').bind('click', function(event) {
   		$( '#toggle' ).trigger( 'click' );
@@ -216,6 +216,13 @@
   		$('img.menu-close').toggle('show').toggleClass('rotated');
   		$('.nav-list').toggleClass('nav-colored');
 	});
+
+    //If side nav is open, the call to action button will trigger it to close when clicked
+	$('a.page-scroll button').bind('click', function(event) {
+		if( $("img.menu-close").hasClass('rotated')) {
+			$( '#toggle' ).trigger( 'click' );
+		}
+  	});
 
     //determines the img src for mobile and desktop
     var device = $(window).innerWidth() > 480 ? 'desktop' : 'mobile';
