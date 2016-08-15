@@ -62,7 +62,8 @@
 		'HTML, CSS/SASS, Javascript, PHP',
 		'Liquid, Bootstrap, jQuery',
 		'Wordpress | Shopify', 
-		'Photoshop | Illustrator'
+		'Photoshop | Illustrator',
+		'Responsive Design'
 	],
 	summary : 'Junior Web Developer specializing in front end development. Experience with responsive design, website optimization, object oriented programming, MVC/MV* design pattern, client-side scripting and test-driven developement.'+
 	'Well versed in HTML5, CSS3, Javascript, jQuery, Photoshop and Illustrator.',

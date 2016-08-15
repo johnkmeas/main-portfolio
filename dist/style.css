@@ -159,7 +159,8 @@ section {
   padding-top: 40px; }
 
 #about {
-  margin: 0; }
+  margin: 0;
+  padding: 170px 0; }
 
 .ui-widget-header {
   background: #efecdf;
@@ -169,7 +170,8 @@ section {
   width: 100%; }
 
 #skills {
-  background: #eaddaa; }
+  background: #ffd280;
+  padding: 170px 0; }
 
 #portfolio, #skills, #contact, #about {
   margin-top: 20px;
@@ -221,8 +223,12 @@ button a {
   font-size: 1.4em; }
 
 footer {
+  padding-bottom: 50px;
   text-align: center;
   margin-top: 105vh; }
+
+footer p {
+  padding-top: 20px; }
 
 button {
   border: none;
@@ -413,6 +419,7 @@ img.shirt-image {
 ul.skills-list {
   -ms-flex-order: -1;
   order: -1;
+  padding: 0;
   margin: 0 auto; }
 
 .skills-image {
@@ -456,7 +463,7 @@ ul.skills-list {
   img.logo-image.animate-logo {
     margin-top: -70px; }
   #portfolio {
-    margin-top: 48%; }
+    margin-top: 30%; }
   .splash-img img {
     top: 50px; }
   .logo img {
@@ -494,7 +501,7 @@ ul.skills-list {
   img.logo-image.animate-logo {
     margin-top: -100px; }
   #portfolio {
-    margin-top: 70%; }
+    margin-top: 40%; }
   .splash-img img {
     top: 50px;
     min-width: 100%; }
@@ -525,7 +532,9 @@ ul.skills-list {
   img.logo-image.animate-logo {
     margin-top: -100px; }
   #portfolio {
-    margin-top: 14%; }
+    margin-top: 10%; }
+  button {
+    margin-top: 90px; }
   .splash-img img {
     top: 50px; }
   .logo img {
@@ -537,10 +546,8 @@ ul.skills-list {
     margin-top: 70vh; } }
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-  .container {
-    max-width: 1024px; }
   #portfolio {
-    margin-top: 35%; }
+    margin-top: 15%; }
   .splash-img img {
     top: 50px; }
   .logo img {
@@ -550,10 +557,8 @@ ul.skills-list {
     margin-top: 65vh; } }
 
 @media only screen and (min-width: 1440px) {
-  .container {
-    max-width: 1024px; }
   #portfolio {
-    margin-top: 44%; }
+    margin-top: 25%; }
   .footer-background {
     width: 1024px; }
   footer {

@@ -4,6 +4,7 @@ section {
 
 #about {
 	margin: 0;
+	padding: 170px 0;
 }
 
 .ui-widget-header {
@@ -16,7 +17,8 @@ section {
 }
 
 #skills {
-	background: $skills-yw;
+	background: lighten($orange, 25%);
+	padding: 170px 0;
 }
 
 #portfolio, #skills, #contact, #about {
@@ -71,17 +73,17 @@ img.logo-image.animate-logo {
 	z-index: -100;
 }
 
-.footer-background {
-
-}
-
-
 button a {
 	color: white;
 	font-size: 1.4em;
 }
 
 footer {
+	padding-bottom: 50px;
   	text-align: center;
 	margin-top: 105vh;
+}
+
+footer p {
+	padding-top: 20px;
 }

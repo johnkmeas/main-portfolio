@@ -10,7 +10,7 @@
 		margin-top: -70px;
 	}
 	#portfolio{
-			margin-top: 48%;
+			margin-top: 30%;
 	}
 
 
@@ -76,7 +76,7 @@
 		margin-top: -100px;
 	}	
 	#portfolio{
-			margin-top: 70%;
+			margin-top: 40%;
 	}
 
 
@@ -132,9 +132,11 @@
 		margin-top: -100px;
 	}
 	#portfolio{
-			margin-top: 14%;
+			margin-top: 10%;
 	}
-
+	button {
+		margin-top: 90px;
+	}
 	.splash-img img {
 		top: 50px;
 	}
@@ -154,11 +156,9 @@
 }
 
 @media only screen and (min-width : 1024px) and (max-width : 1439px) {
-	.container {
-		max-width: 1024px;
-	}
+
 	#portfolio{
-			margin-top: 35%;
+			margin-top: 15%;
 	}
 
 
@@ -177,11 +177,8 @@
 }
 
 @media only screen and (min-width : 1440px) {
-	.container {
-		max-width: 1024px;
-	}
 	#portfolio{
-			margin-top: 44%;
+			margin-top: 25%;
 	}
 
 
