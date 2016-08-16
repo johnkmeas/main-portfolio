@@ -119,7 +119,7 @@ ul.contact-list li a {
   color: white; }
 
 #about p {
-  padding: 20px; }
+  margin: 0 20px; }
 
 .center, .heading {
   text-align: center; }
@@ -160,7 +160,7 @@ section {
 
 #about {
   margin: 0;
-  padding: 170px 0; }
+  padding: 0 0 170px 0; }
 
 .ui-widget-header {
   background: #efecdf;
@@ -170,12 +170,8 @@ section {
   width: 100%; }
 
 #skills {
-  background: #ffd280;
+  background: #e0d371;
   padding: 170px 0; }
-
-#portfolio, #skills, #contact, #about {
-  margin-top: 20px;
-  margin-bottom: 40px; }
 
 .splash-img {
   max-width: 100%; }
@@ -213,6 +209,7 @@ img.logo-image.animate-logo {
   width: 50%; }
 
 .footer-image {
+  width: 100%;
   margin-top: 10vh;
   position: absolute;
   overflow: hidden;
@@ -242,11 +239,18 @@ button {
   height: 48px;
   color: white;
   font-size: 1.3em;
-  transition: 0.5s; }
+  transition: 0.2s; }
 
 button:hover {
-  background: #ffd280;
-  transform: scale(1.1); }
+  transition: 0.2s;
+  background: #ff9d00;
+  transform: scale(1.1);
+  box-shadow: 0px 12px 34px -10px rgba(0, 0, 0, 0.53); }
+
+a button:active {
+  background: #ffc700;
+  transform: scale(1);
+  box-shadow: 0px 4px 11px -5px rgba(0, 0, 0, 0.53); }
 
 .sticky {
   width: 100%;
@@ -375,16 +379,16 @@ img.menu-open, img.menu-close {
 .about-container {
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -ms-flex-align: start;
-  -ms-grid-row-align: flex-start;
-  align-items: flex-start; }
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center; }
 
-.about-container p {
-  width: 40%; }
+.about-copy {
+  -ms-flex-order: 1;
+  order: 1;
+  width: 55%; }
 
-img.shirt-image {
+img.about-image {
   width: 40%;
   -ms-flex-order: -2;
   order: -2; }
@@ -471,6 +475,20 @@ ul.skills-list {
     max-width: 260px; }
   .about-container p {
     width: 100%; }
+  #about {
+    padding-bottom: 100px; }
+  .about-copy {
+    width: 300px;
+    -ms-flex-order: 2;
+    order: 2;
+    position: absolute; }
+  .about-copy p, .about-copy h1 {
+    color: white;
+    line-height: 1.6em; }
+  img.about-image {
+    width: 100%;
+    -ms-flex-order: 1;
+    order: 1; }
   .shirt-image {
     width: 80%; }
   .portfolio-description {
@@ -510,6 +528,18 @@ ul.skills-list {
     max-width: 300px; }
   .about-container p {
     width: 100%; }
+  .about-copy {
+    width: 300px;
+    -ms-flex-order: 2;
+    order: 2;
+    position: absolute; }
+  .about-copy p, .about-copy h1 {
+    color: white;
+    line-height: 1.6em; }
+  img.about-image {
+    width: 100%;
+    -ms-flex-order: 1;
+    order: 1; }
   .shirt-image {
     width: 80%; }
   .portfolio-description {
@@ -548,17 +578,25 @@ ul.skills-list {
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
   #portfolio {
     margin-top: 15%; }
+  .footer-background {
+    width: 100%; }
   .splash-img img {
     top: 50px; }
   .logo img {
     width: 100%;
     max-width: 520px; }
+  .about-copy {
+    width: 45%;
+    padding-left: 60px; }
   footer {
     margin-top: 65vh; } }
 
 @media only screen and (min-width: 1440px) {
   #portfolio {
     margin-top: 25%; }
+  .about-copy {
+    width: 40%;
+    padding-left: 100px; }
   .footer-background {
     width: 1024px; }
   footer {

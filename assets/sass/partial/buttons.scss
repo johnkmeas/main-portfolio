@@ -10,9 +10,25 @@ button{
 	height: 48px;
 	color: white;
 	font-size: 1.3em;
-	transition: 0.5s
+	transition: 0.2s;
+
 }
 button:hover{
-	background: lighten($orange, 25%);
+	transition: 0.2s;
+	background: adjust-hue($orange, -2deg);
 	transform: scale(1.1);
+-webkit-box-shadow: 0px 12px 34px -10px rgba(0,0,0,0.53);
+-moz-box-shadow: 0px 12px 34px -10px rgba(0,0,0,0.53);
+box-shadow: 0px 12px 34px -10px rgba(0,0,0,0.53);
 }
+
+
+a button:active {
+	background: adjust-hue($orange, 8deg);
+	transform: scale(1);
+-webkit-box-shadow: 0px 4px 11px -5px rgba(0,0,0,0.53);
+-moz-box-shadow: 0px 4px 11px -5px rgba(0,0,0,0.53);
+box-shadow: 0px 4px 11px -5px rgba(0,0,0,0.53);
+
+}
+

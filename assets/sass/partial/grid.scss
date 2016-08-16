@@ -5,19 +5,17 @@
 .about-container {
 	@extend .flexible;
     flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: flex-start;
+    
+    align-items: center;
 }
 
-.about-container p{
-	width: 40%;
+.about-copy{
+	order: 1;
+	width: 55%;
 }
 
-#text-above-shirt {
 
-}
-
-img.shirt-image {
+img.about-image {
 	width: 40%;
 	order: -2;
 }

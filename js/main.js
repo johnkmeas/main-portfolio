@@ -4,8 +4,8 @@
 	role : 'Front End Web Developer',
 	splashImg : 'img/ninja-desktop.jpg',
 	mobileSplashImg : 'img/mobile-splash-min.jpg',
-	skillsImg : 'img/nes-name.svg',
-	shirtImg : 'img/shirt.svg',
+	skillsImg : 'img/Untitled-1.png',
+	aboutImg : 'img/about.png',
 	logo : 'img/name-logo.svg',
 	footerMobile : 'img/footer-img-min.jpg',
 	footerDesktop : 'img/footer-desktop-min.jpg',
@@ -87,7 +87,7 @@
 	logo = '<img class="logo-image animate-logo" src="%data%" alt="logo image" />',
 	shirtImage = '<img src="%data%"" alt="shirt with shopify logo" class="shirt-image"/>',
 	splashImage = '<img class="animate-splash" src="" data-mobile="%data%" data-desktop="%data2%" alt="main background image"/>',
-	skillsImage = '<img src="%data%" class="skills-image" alt="nintendo controller with shopify logo"/>',
+	aboutImage = '<img src="%data%" class="about-image" alt="nintendo controller with shopify logo"/>',
 	responsiveImg = '<img class="footer-background" src="" data-mobile="%data%" data-desktop="%data2%" alt="footer background image"/>',
 	insertPortfolio = {};
 
@@ -117,8 +117,8 @@
 		$('.logo').append(logoInit);
 		var splashInit = splashImage.replace('%data%', bio.mobileSplashImg).replace('%data2%', bio.splashImg);
 		$('.splash-img').append(splashInit);
-		var shirtInit = shirtImage.replace('%data%', bio.skillsImg);
-		$('.about-container').append(shirtInit);
+		var aboutInit = aboutImage.replace('%data%', bio.aboutImg);
+		$('.about-container').append(aboutInit);
 		var footerInit = responsiveImg.replace('%data%', bio.footerMobile).replace('%data2%', bio.footerDesktop);
 		$('.footer-image').append(footerInit);
 	};
@@ -168,7 +168,7 @@
 
 	bio.skills.display = function() {
 		var skillsDone = skillsContainer.replace('%data%', skillsList),
-		skillsImageInit = skillsImage.replace('%data%', bio.skillsImg ),
+	
 		skilledIt, skillInit;
 		$('#skills').append(skillsDone);
 		for(var i = 0; i < bio.skills.length; i++){
