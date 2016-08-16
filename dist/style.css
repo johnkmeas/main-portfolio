@@ -1,5 +1,4 @@
 body {
-  margin: 1;
   background: #ded8bd; }
 
 .container {
@@ -466,6 +465,9 @@ ul.skills-list {
     padding: 10px 10px; }
   img.logo-image.animate-logo {
     margin-top: -70px; }
+  button {
+    margin: 0 auto;
+    margin-top: 70px; }
   #portfolio {
     margin-top: 30%; }
   .splash-img img {
