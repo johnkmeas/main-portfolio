@@ -17,7 +17,7 @@
 		location : 'Surrey BC, Canada'
 		},
 	portfolio : [
-		[	'img/digital-stencil-thumbnail-min.jpg',
+		[	'img/images/images/portfolio-thumbnail_01.jpg',
 			'https://digitalstencilca.ipage.com/wordpress.haiku',
 			'This is a wordpress website that I\'ve create from scratch. It\'s still under construction and is filled with mostly dummy text at the moment. I hope to use it to find freelance design and development work in the future. All icon illustrations are original.',
 			'HTML | CSS/SASS | PHP | Javascript',
@@ -27,7 +27,7 @@
 			'Wordpress Theme Development | Responsive Design | Illustration',
 			'wordpress site'
 			],
-		[	'img/portf-min.jpg',
+		[	'img/images/images/portfolio-thumbnail_02.jpg',
 			'https://johnkmeas.github.io',
 			'This is a single page scrolling site I created to display some of the student projects I completed while studying with Udacity. The fun part was creating a parallax effect with an image of myself attempting to pull a tree out from the earth... fortunately I failed.',
 			'HTML | CSS | Javascript',
@@ -37,7 +37,7 @@
 			'Single Page Portfolio Site | Responsive Design | Parallax',
 			'portfolio site'
 			],
-		[	'img/map-min.jpg',
+		[	'img/images/images/portfolio-thumbnail_03.jpg',
 			'https://johnkmeas.github.io/neighborhoodmap',
 			'I built this simple application to help me decide on places to walk my dog. It has animated drop-down marks on a Google Map with popup windows that display location information, along with the name of the nearest coffee shop retrieved from the Foursquare API. I used KnockoutJS to instantly update the front-end whenever the data model changes.',
 			'HTML | CSS | Javascript',
@@ -47,7 +47,7 @@
 			'Web Application | Data-Binding | RESTful API',
 			'map application site'
 			],
-		[	'img/desktop-potf-min.jpg',
+		[	'img/images/images/portfolio-thumbnail_04.jpg',
 			'https://johnkmeas.github.io/main-portfolio/',
 			'I built this single page site with no CSS frameworks. The majority of the content is dynamically added to the DOM using jQuery. It incorporates some original illustrations to represent my personality. I thought it would be fun to use part of a nintendo controller for the menu icon because it resembles the familiar hamburger icon.',
 			'HTML | CSS/SASS | Javascript',
@@ -83,7 +83,7 @@
 	skillsContainer = '<div id="skills-container">%data%</div>',
 	skillsList  = '<ul class="skills-list"></ul>',
 	portfolioContainer = '<div class="portfolio-container"></div>',
-	portfolioBundle = '<div id="icon-bundle"><div class="img-linked"><a href="%data%"><img src="%data2%" class="portfolio-icon" alt="thumbnail image of %data9%"/></a></div><div class="portfolio-description"><h3>%data7%</h3><p>%data3%</p><a href="%data7%" class="demo-link">DEMO</a>  |  <a href="%data8%" class="github-link">GITHUB</a><div class="portfolio-meta"><p>Languages:  %data4%</p><p>Frameworks/Libraries:  %data5%</p><p>Tools:  %data6%</p></div></div></div>',
+	portfolioBundle = '<div id="icon-bundle" class="dropdown"><div class="dropdown-content"><div class="portfolio-description"><h3>%data7%</h3><div class="portfolio-meta"><p>%data4%</p><p>%data5%</p><p>%data6%</p></div><div class="portfolio-btn"><a href="%data%">Demo</a><a href="%data8%" class="github-link">Github</a></div></div></div><div class="dropbtn img-linked"><img src="%data2%" class="portfolio-icon" alt="thumbnail image of %data9%"/></div></div>',
 	logo = '<img class="logo-image animate-logo" src="%data%" alt="logo image" />',
 	shirtImage = '<img src="%data%"" alt="shirt with shopify logo" class="shirt-image"/>',
 	splashImage = '<img class="animate-splash" src="" data-mobile="%data%" data-desktop="%data2%" alt="main background image"/>',

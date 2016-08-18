@@ -48,6 +48,7 @@ a {
 }
 
 .portfolio-heading {
+	line-height: 1.2em;
 	padding-bottom: 25px;
 }
 
@@ -62,7 +63,10 @@ a {
 h3, p, li {
 	color: $drk-green;
 }
-
+h3 {
+	margin: 0;
+	margin-top: 13px;
+}
 ul.contact-list {
 	float: right;
 }
@@ -89,17 +93,17 @@ ul.contact-list li a {
 	padding: 20px;
 }
 
-#icon-bundle {
-	padding-bottom: 60px;
-}
-
 .demo-link {
 	color: lighten($ribbon-color, 30%);
 }
 
 .portfolio-meta p {
 	font-size: 0.8em;
-	color: lighten($drk-green, 15%);
+	color: lighten($drk-green, 5%);
+}
+div.portfolio-meta {
+	padding: 0 10px;
+	display: inline-flex;
 }
 
 ul.skills-list li {
