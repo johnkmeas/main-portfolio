@@ -26,6 +26,9 @@
 		max-width: 260px;
 	}
 
+	#icon-bundle.dropdown {
+		width: 100%;
+	}
 	.about-container p{
 		width: 100%;
 	}
@@ -154,13 +157,12 @@
 	}	
 }
 	
-@media only screen and (min-width : 768px) and (max-width : 820px) {
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
 
 	img.logo-image.animate-logo {
 		margin-top: -100px;
 	}
 	#portfolio{
-			margin-top: 5%;
 	}
 	button {
 		margin-top: 90px;
@@ -179,21 +181,26 @@
 	}
 
 	footer {
-		margin-top: 70vh;
+		margin: 0 auto;
 	}
 	#icon-bundle {
-		width: 50%;
+		width: 48%;
 		height: 320px;
 	}
 	.portfolio-icon {
 		width: 50vw;
+	}
+	#icon-bundle.dropdown {
+		width: calc(50% - 15px);
+		height: 240px;
+		margin-bottom: 22px;
 	}	
 }
 
 @media only screen and (min-width : 1024px) and (max-width : 1439px) {
 
 	#portfolio{
-			margin-top: 18%;
+		margin-top: 10%;
 	}
 	.footer-background {
 		width: 100%;
@@ -213,7 +220,7 @@
 	}
 
 	footer {
-	  margin-top: 65vh;
+		margin: 0 auto;
 	}
 	#icon-bundle {
 		width: 50%;
@@ -230,12 +237,16 @@
 	.portfolio-icon {
 		width: 50vw;
 	}
-
+	#icon-bundle.dropdown {
+		width: calc(50% - 15px);
+		height: 240px;
+		margin-bottom: 22px;
+	}
 }
 
 @media only screen and (min-width : 1440px) {
 	#portfolio{
-			margin-top: 25%;
+		margin-top: 24%;
 	}
 	.about-copy{
 	    width: 40%;
@@ -247,7 +258,7 @@
 	}
 
 	footer {
-	  margin-top: 60vh;
+		margin: 0 auto;
 	}
 	.portfolio-description {
 		padding: 10px;
@@ -255,6 +266,17 @@
 	}
 	.portfolio-icon {
 		width: 50vw;
+	}
+	#icon-bundle.dropdown {
+		width: calc(50% - 15px);
+		height: 240px;
+		margin-bottom: 19px;
+	}
+	.dropdown:hover .dropdown-content  {
+	    display: block;
+	    bottom: 0px;
+	    opacity: 1;
+	    transform: scale(1);
 	}
 
 }

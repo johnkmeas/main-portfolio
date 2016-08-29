@@ -1,5 +1,6 @@
 section {
 	padding-top: 40px;
+
 }
 
 #about {
@@ -17,8 +18,9 @@ section {
 }
 
 #skills {
-	background: #e0d371;
+	background: $skills-ywl;
 	padding: 170px 0;
+	@extend .shadow
 }
 
 #portfolio, #skills, #contact, #about {
@@ -65,13 +67,15 @@ img.logo-image.animate-logo {
 }
 
 .footer-image {
-	width: 100%;
-	margin-top: 10vh;
 	position: absolute;
 	overflow: hidden;
 	z-index: -100;
 }
-
+.footer-image {
+-webkit-box-shadow: 0px -2px 33px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -2px 33px -11px rgba(0,0,0,0.75);
+box-shadow: 0px -2px 33px -11px rgba(0,0,0,0.75);
+}
 
 button a {
 	color: white;
@@ -81,7 +85,8 @@ button a {
 footer {
 	padding-bottom: 50px;
   	text-align: center;
-	margin-top: 105vh;
+  	background: darken($drk-green, 12%);
+	margin: 200px auto 0 auto;
 }
 
 footer p {

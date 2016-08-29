@@ -2,7 +2,7 @@
 	var bio = {
 	name : 'John Meas',
 	role : 'Front End Web Developer',
-	splashImg : 'img/ninja-desktop.jpg',
+	splashImg : 'img/ninja-desktop2.jpg',
 	mobileSplashImg : 'img/mobile-splash-min.jpg',
 	skillsImg : 'img/Untitled-1.png',
 	aboutImg : 'img/about.png',
@@ -209,18 +209,18 @@
   	});  	
 
   	// hides the menu close button on initialize
-    $('img.menu-close').toggle('show');
+    //$('i.menu-close').toggle('show');
 
     // swaps menu icons between open and close version when clicked
     $('#toggle').click(function() {
-  		$('.menu-open').toggle('scale');
-  		$('img.menu-close').toggle('show').toggleClass('rotated');
+  		$('i.menu-open').toggle('show');
+  		$('i.menu-close').toggle('show').toggleClass('rotate');
   		$('.nav-list').toggleClass('nav-colored');
 	});
 
     //If side nav is open, the call to action button will trigger it to close when clicked
 	$('a.page-scroll button').bind('click', function(event) {
-		if( $("img.menu-close").hasClass('rotated')) {
+		if( $("i.menu-close").hasClass('rotate')) {
 			$( '#toggle' ).trigger( 'click' );
 		}
   	});

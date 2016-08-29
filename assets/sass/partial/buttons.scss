@@ -1,6 +1,7 @@
 button{
 	border: solid lighten($orange, 20%) 3px;
- 	background: transparent;
+ 	background: darken($orange, 10%);
+    opacity: 0.8;
 	position: relative;
 	display: block;
 	margin: 0 auto;
@@ -50,7 +51,7 @@ a button:visited {
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
 	display: block;
-    background-color: #f9f9f9;
+    background-color: #252B2F;
     min-width: 160px;
     left: 0;
     position: absolute;
@@ -60,16 +61,16 @@ a button:visited {
     text-align: center;
     margin: 10px;
 	opacity: 0;
-	transform: scale(0.8);
+	transform: scale(0.9);
 	position: absolute;
-  	bottom: -103px;
+  	bottom: 10px;
   	transition: all 0.5s ease;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-	border: solid $orange 2px;
-    color: $orange;
+	border: solid white 2px;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -80,32 +81,45 @@ a button:visited {
 }
 
 .dropdown-content a:first-of-type {
-	border-right: solid $orange 1px;
+	border-right: solid white 1px;
 }
 .dropdown-content a:last-of-type {
-	border-left: solid $orange 1px;
+	border-left: solid white 1px;
 }
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
 	background-color: $orange;
-	border: solid black 2px;
-    color: black;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
-    bottom:250px;
+    bottom: 195px;
     opacity: 1;
     transform: scale(1);
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .portfolio-icon {
-    opacity: 0.9;
+    opacity: 1;
     transform: scale(1.1);
 }
-
+.dropdown:hover  div#icon-bundle.dropdown {
+    transform: scale(2);
+}
 .portfolio-btn {
 	margin-bottom: 10px;
+}
+
+.fa {
+    font-size: 2em;
+    color: white;
+}
+
+.fa-bars {
+    transition-delay: 2s;
+}
+
+.fa-times {
+    display: none;
 }

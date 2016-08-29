@@ -27,11 +27,13 @@ p#text-under-shirt {
 .portfolio-container {
     @extend .flexible;
     flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .portfolio-icon {
-	width: 100vw;
-	opacity: 0.7;
+    width: 450px;
+	opacity: 0.75;
 
 }
 
@@ -40,9 +42,16 @@ p#text-under-shirt {
     overflow: hidden;
 	flex-flow: row wrap;
 	align-items: flex-start;
+
 	margin: 0;
 }
 
+#icon-bundle.dropdown {
+	width: 100%;
+	height: 240px;
+	margin-bottom: 22px;
+	@extend .shadow
+}
 #skills-container {
     @extend .flexible;
 	flex-flow: column wrap;
@@ -84,18 +93,22 @@ ul.skills-list {
 	opacity: 0.2;
 	transform: scale(1.2);
 	-webkit-box-shadow: 0px 10px 21px -8px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 10px 21px -8px rgba(0,0,0,0.75);
-box-shadow: 0px 10px 21px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 10px 21px -8px rgba(0,0,0,0.75);
+	box-shadow: 0px 10px 21px -8px rgba(0,0,0,0.75);
+}
+
+.icon-bundle:hover + .icon-bundle.dropdown{
+	border-width: 0px;
 }
 .portfolio-description{
 	-webkit-box-shadow: 0px 13px 51px -5px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 13px 51px -5px rgba(0,0,0,0.75);
 	box-shadow: 0px 13px 51px -5px rgba(0,0,0,0.75);
-	background: lighten($ribbon-color, 10%);
+	background: lighten($orange, 12.5%);
 	position: absolute;
-	color: black;
+	color: $brown;
 	transition: 1s;
-	opacity: 0.85;
+	opacity: 0.8;
 }
 
 

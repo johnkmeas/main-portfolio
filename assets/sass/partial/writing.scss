@@ -29,9 +29,11 @@ em{
 }
 
 .brand h1 {
+font-weight: 300;
+    letter-spacing: 0.03em;
+    padding-top: 10px;
+    word-spacing: .1em;
 	font-size: 1.3em;
-	font-weight: 300;
-	letter-spacing: 0.05em;
 	word-spacing: 0.1em;
   float: right;
   padding-right: 40px;
@@ -46,8 +48,14 @@ a {
 .nav-list li, .contact-list li {
 	list-style-type: none;
 }
+h1.portfolio-heading {
+	background: $skills-ywl;
+	padding: 20px;
+	@extend .shadow
+}
 
 .portfolio-heading {
+	background-color: lighten($ribbon-color, 10%);
 	line-height: 1.2em;
 	padding-bottom: 25px;
 }
@@ -60,15 +68,16 @@ a {
 	color: lighten($skills-yw, 10%);;
 }
 
-h3, p, li {
+p, li {
 	color: $drk-green;
 }
 h3 {
+	color: white;
 	margin: 0;
 	margin-top: 13px;
 }
 ul.contact-list {
-	float: right;
+	text-align: center;
 }
 
 ul.contact-list li  {
@@ -89,6 +98,10 @@ ul.contact-list li a {
 	text-align: center;
 }
 
+.heading {
+	padding: 20px;
+}
+
 .main-article {
 	padding: 20px;
 }
@@ -99,7 +112,7 @@ ul.contact-list li a {
 
 .portfolio-meta p {
 	font-size: 0.8em;
-	color: lighten($drk-green, 5%);
+	color: white;
 }
 div.portfolio-meta {
 	padding: 0 10px;

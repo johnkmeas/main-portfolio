@@ -12,7 +12,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-	background: $drk-green;
+	background: darken($drk-green, 12%);
     z-index: 1000;
 }
 
@@ -138,6 +138,3 @@ img.menu-open, img.menu-close {
 
 }
 
-.rotated {
-    transform: rotate(45deg);
-}
