@@ -158,7 +158,8 @@ ul.skills-list li {
   padding: 0px;
   list-style: none;
   text-align: center;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  word-spacing: 0.7em; }
 
 footer {
   width: 100vw;
@@ -226,9 +227,6 @@ img.logo-image.animate-logo {
   width: 100%;
   max-width: 640px; }
 
-#contact {
-  margin: 10% 10%; }
-
 .contact-image {
   width: 50%; }
 
@@ -248,7 +246,7 @@ footer {
   padding-bottom: 50px;
   text-align: center;
   background: #242c25;
-  margin: 200px auto 0 auto; }
+  margin: 80% auto 0; }
 
 footer p {
   padding-top: 20px; }
@@ -585,10 +583,11 @@ ul.skills-list {
   border-width: 0px; }
 
 .portfolio-description {
+  width: 40%;
   box-shadow: 0px 13px 51px -5px rgba(0, 0, 0, 0.75);
-  background: #ffbc40;
+  background: #b1a67a;
   position: absolute;
-  color: #625b49;
+  color: white;
   transition: 1s;
   opacity: 0.8; }
 
@@ -629,6 +628,8 @@ ul.skills-list {
   .about-copy p, .about-copy h1 {
     color: white;
     line-height: 1.6em; }
+  #about p {
+    font-size: 1.3em; }
   img.about-image {
     width: 100%;
     -ms-flex-order: 1;
@@ -636,9 +637,11 @@ ul.skills-list {
   .shirt-image {
     width: 80%; }
   .portfolio-description {
-    width: 300px; }
+    width: 100%;
+    top: -20px; }
   ul.contact-list {
-    margin-top: 20vh; }
+    margin-top: 20vh;
+    text-align: right; }
   .nav {
     height: 10vh; }
   .nav-list {
@@ -680,6 +683,8 @@ ul.skills-list {
   .about-copy p, .about-copy h1 {
     color: white;
     line-height: 1.6em; }
+  #about p {
+    font-size: 1.2em; }
   img.about-image {
     width: 100%;
     -ms-flex-order: 1;
@@ -687,9 +692,21 @@ ul.skills-list {
   .shirt-image {
     width: 80%; }
   .portfolio-description {
-    width: 300px; }
+    width: 100%; }
+  #icon-bundle {
+    width: 42%;
+    height: 40%; }
+  .portfolio-icon {
+    width: 100vw; }
+  #icon-bundle.dropdown {
+    display: block;
+    width: calc(100% - 15px);
+    margin: 0 auto;
+    height: 200px;
+    margin-bottom: 22px; }
   ul.contact-list {
-    margin-top: 20vh; }
+    margin-top: 20vh;
+    text-align: right; }
   .nav-list {
     height: 100vh;
     width: 100px; }
@@ -714,13 +731,17 @@ ul.skills-list {
     max-width: 460px; }
   .footer-image {
     width: 100vw; }
+  #contact {
+    margin: 10% auto 0; }
   footer {
-    margin: 0 auto; }
+    margin: 20% auto 0; }
   #icon-bundle {
     width: 48%;
     height: 320px; }
   .portfolio-icon {
     width: 50vw; }
+  .portfolio-description {
+    width: 100%; }
   #icon-bundle.dropdown {
     width: calc(50% - 15px);
     height: 240px;
@@ -739,17 +760,26 @@ ul.skills-list {
   .about-copy {
     width: 45%;
     padding-left: 60px; }
+  #contact {
+    margin: 10% auto 0; }
   footer {
-    margin: 0 auto; }
+    margin: 7% auto 0; }
+  #icon-bundle {
+    width: 48%;
+    height: 320px; }
+  .portfolio-icon {
+    width: 50vw; }
+  .portfolio-description {
+    width: 100%; }
+  #icon-bundle.dropdown {
+    width: calc(50% - 15px);
+    height: 240px;
+    margin-bottom: 22px; }
   #icon-bundle {
     width: 50%;
     height: 460px; }
-  .dropdown-content {
-    margin: 100px; }
   .portfolio-description {
-    padding: 10px;
-    margin: -40px;
-    margin-top: 60px; }
+    width: 100%; }
   .portfolio-icon {
     width: 50vw; }
   #icon-bundle.dropdown {
@@ -765,10 +795,14 @@ ul.skills-list {
     padding-left: 100px; }
   .footer-background {
     width: 1024px; }
+  #contact {
+    margin: 10% auto 0; }
   footer {
-    margin: 0 auto; }
+    margin: 7% auto 0;
+    height: 100px; }
   .portfolio-description {
-    padding: 10px;
+    width: 100%;
+    padding: 10px 0;
     position: relative; }
   .portfolio-icon {
     width: 50vw; }
