@@ -1,5 +1,5 @@
 body {
-  background: #ded8bd; }
+  background: #f7f3da; }
 
 .container {
   max-width: 960px;
@@ -9,7 +9,7 @@ body {
   width: 100%;
   margin: 0 auto; }
 
-.shadow, h1.portfolio-heading, #skills, #icon-bundle.dropdown {
+.shadow, #skills, #icon-bundle.dropdown {
   box-shadow: 0px 6px 33px -11px rgba(0, 0, 0, 0.75); }
 
 .show {
@@ -55,10 +55,10 @@ button {
     transform: translate(0px, 0px) scale(1); } }
 
 body {
-  font: 16px/1.6em 'Roboto', sans-sarif; }
+  font: 16px/1.6em 'Open Sans', sans-serif; }
 
 h1, h2 {
-  font-family: 'Playfair Display', serif; }
+  font-weight: 700; }
 
 section h1 {
   color: #625b49; }
@@ -98,11 +98,8 @@ a {
   list-style-type: none; }
 
 h1.portfolio-heading {
-  background: #e0d371;
-  padding: 20px; }
-
-.portfolio-heading {
-  background-color: #efecdf;
+  background: #f7f3da;
+  padding: 20px;
   line-height: 1.2em;
   padding-bottom: 25px; }
 
@@ -110,6 +107,8 @@ h1.portfolio-heading {
   padding-bottom: 30px; }
 
 .contact-heading {
+  margin-top: -30px;
+  margin-bottom: 60px;
   color: #f4edd3; }
 
 p, li {
@@ -121,7 +120,8 @@ h3 {
   margin-top: 13px; }
 
 ul.contact-list {
-  text-align: center; }
+  text-align: center;
+  padding: 0; }
 
 ul.contact-list li {
   padding: 20px; }
@@ -189,6 +189,13 @@ section {
 #skills {
   background: #e0d371;
   padding: 170px 0; }
+
+.skills--laptop-image {
+  left: 0;
+  right: 0;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; }
 
 .splash-img {
   max-width: 100%; }
@@ -266,7 +273,7 @@ html, body {
     opacity: .6; }
 
 button {
-  border: solid #ffc966 3px;
+  border: solid white 3px;
   background: #cc8400;
   opacity: 0.8;
   position: relative;
@@ -275,7 +282,7 @@ button {
   margin-top: 120px;
   width: 200px;
   height: 48px;
-  color: #ffc04d;
+  color: white;
   font-size: 1.3em;
   transition: 0.2s; }
 

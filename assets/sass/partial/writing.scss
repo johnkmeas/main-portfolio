@@ -1,8 +1,9 @@
+
 body {
-	font: 16px/1.6em 'Roboto', sans-sarif;
-}
+	font: 16px/1.6em 'Open Sans', sans-serif;
+	}
 h1, h2 {
-	font-family: 'Playfair Display', serif;
+	font-weight: 700;
 }
 section h1{
 	color: $brown;
@@ -49,22 +50,20 @@ a {
 	list-style-type: none;
 }
 h1.portfolio-heading {
-	background: $skills-ywl;
+	background: lighten($skills-ywl, 25%);
 	padding: 20px;
-	@extend .shadow
-}
-
-.portfolio-heading {
-	background-color: lighten($ribbon-color, 10%);
 	line-height: 1.2em;
 	padding-bottom: 25px;
 }
+
 
 .skills-heading {
 	padding-bottom: 30px;
 }
 
 .contact-heading {
+	margin-top: -30px;
+    margin-bottom: 60px;
 	color: lighten($skills-yw, 10%);;
 }
 
@@ -78,6 +77,7 @@ h3 {
 }
 ul.contact-list {
 	text-align: center;
+	padding: 0;
 }
 
 ul.contact-list li  {

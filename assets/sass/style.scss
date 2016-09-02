@@ -15,7 +15,7 @@ $drk-green: #404d41;
 $grey: #8c938e;
 
 body {
-	background: $ribbon-color;
+	background: lighten($skills-ywl, 25%);
 }
 
 .container {

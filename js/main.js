@@ -6,7 +6,7 @@
 	mobileSplashImg : 'img/mobile-splash-min.jpg',
 	skillsImg : 'img/Untitled-1.png',
 	aboutImg : 'img/about.png',
-	logo : 'img/name-logo.svg',
+	logo : 'img/name-logo2.svg',
 	footerMobile : 'img/footer-img-min.jpg',
 	footerDesktop : 'img/footer-desktop-min.jpg',
 	contacts : {
@@ -59,10 +59,12 @@
 		]
 	],
 	skills : [
-		'HTML, CSS/SASS, Javascript, PHP',
-		'Liquid, Bootstrap, jQuery',
-		'Wordpress | Shopify', 
-		'Photoshop | Illustrator',
+		'HTML CSS/SASS Javascript jQuery PHP',
+		'Bootstrap Materialize',
+		'Jade Liquid',
+		'Wordpress Shopify', 
+		'Photoshop Illustrator',
+		'Node Gulp Git',
 		'Responsive Design'
 	],
 	summary : 'Junior Web Developer specializing in front end development. Experience with responsive design, website optimization, object oriented programming, MVC/MV* design pattern, client-side scripting and test-driven developement.'+
