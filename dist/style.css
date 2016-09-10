@@ -136,6 +136,9 @@ ul.contact-list li a {
 .center, .heading {
   text-align: center; }
 
+.about-copy h1.heading {
+  text-align: left; }
+
 .heading {
   padding: 20px; }
 
@@ -500,6 +503,8 @@ img.menu-open, img.menu-close {
 .about-container {
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-align: center;
   -ms-grid-row-align: center;
   align-items: center; }
@@ -507,7 +512,7 @@ img.menu-open, img.menu-close {
 .about-copy {
   -ms-flex-order: 1;
   order: 1;
-  width: 55%; }
+  margin: 0 auto; }
 
 img.about-image {
   width: 40%;

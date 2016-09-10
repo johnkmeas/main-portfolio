@@ -5,13 +5,13 @@
 .about-container {
 	@extend .flexible;
     flex-flow: row wrap;
-    
+    justify-content: space-between;
     align-items: center;
 }
 
 .about-copy{
 	order: 1;
-	width: 55%;
+	margin: 0 auto;
 }
 
 
