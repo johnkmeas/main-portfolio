@@ -76,7 +76,7 @@
 		'Design'
 		]
 	},
-	nav = ['portfolio', 'skills', 'about', 'contact'],
+	nav = ['portfolio','skills', 'about', 'contact'],
 	contactContainer = '<div class="contact-container"><ul class="contact-list"></ul></div>',
 	contactFormatted = '<li><a href="%data%">%data2%</a></li>',
 	contactEmail = '<li><a href="MAILTO:%data%">%data2%</a></li>',

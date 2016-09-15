@@ -21,6 +21,8 @@
 	height: 100vh;
 	width: 160px;
     background: lighten($drk-green, 10%);
+    padding-right: 50px;
+    padding-left: 0;
 }
 
 nav ul {
@@ -34,8 +36,7 @@ ul.nav-list li a{
     display: block;
     width: 100px;
     height: 48px;
-    float: right;
-    text-align: right;
+    text-align: left;
 }
 
 ul.nav-list li a {
@@ -44,14 +45,15 @@ ul.nav-list li a {
 
 ul.nav-list li a:hover,
 ul.nav-list li a:active {
-    letter-spacing: 3px;
+    letter-spacing: 1.4px;
+    transform: scale(1.1);
     transition: all 280ms ease-in-out;
 }
 
 ul.nav-list li a:after,
 ul.nav-list li a:before {
     backface-visibility: hidden;
-    border: 1px solid rgba(#fff, 0);
+    
     bottom: 0px;
     content: " ";
     display: block;
@@ -120,7 +122,7 @@ img.menu-open, img.menu-close {
 
 /* Pushing the Menu off the canves */
 #menu {
-    left: -200px; /* must be the same as the width of the menu */
+    left: -250px; /* must be the same as the width of the menu */
     -webkit-transition: left 1s;
     transition: left 1s;
 }
