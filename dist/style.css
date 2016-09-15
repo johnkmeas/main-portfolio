@@ -497,6 +497,9 @@ img.menu-open, img.menu-close {
 .menu-close {
   transition: all 1.3s cubic-bezier(0.55, 0.085, 0.68, 0.53); }
 
+.nav-wrapper, .page-footer {
+  background-color: #404d41; }
+
 .flexible, .main-header, .about-container, .portfolio-container, #icon-bundle, #skills-container {
   display: -ms-flexbox;
   display: flex; }
@@ -603,6 +606,10 @@ ul.skills-list {
 
 .img-text {
   position: relative; }
+
+.materialboxed {
+  margin: 0 auto;
+  padding-top: 40px; }
 
 @media only screen and (max-width: 320px) {
   #menu h2 {
