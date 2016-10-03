@@ -201,6 +201,9 @@ section {
   margin: 0 auto;
   max-width: 100%; }
 
+section#portfolio {
+  margin: 20% 0; }
+
 .splash-img {
   max-width: 100%; }
 
@@ -426,6 +429,7 @@ ul.nav-list li a:active {
 
 ul.nav-list li a:after,
 ul.nav-list li a:before {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   bottom: 0px;
   content: " ";
@@ -437,6 +441,7 @@ ul.nav-list li a:before {
 
 ul.nav-list li a:hover:after,
 ul.nav-list li a:hover:before {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-color: #fff;
   transition: width 350ms ease-in-out;
@@ -510,7 +515,6 @@ img.menu-open, img.menu-close {
   -ms-flex-pack: justify;
   justify-content: space-between;
   -ms-flex-align: center;
-  -ms-grid-row-align: center;
   align-items: center; }
 
 .about-copy {
@@ -539,7 +543,6 @@ img.about-image {
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   -ms-flex-align: start;
-  -ms-grid-row-align: flex-start;
   align-items: flex-start;
   margin: 0; }
 
@@ -554,7 +557,6 @@ img.about-image {
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-align: center;
-  -ms-grid-row-align: center;
   align-items: center; }
 
 ul.skills-list {
