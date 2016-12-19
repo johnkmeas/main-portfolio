@@ -62,17 +62,15 @@
 		'HTML CSS/SASS Javascript jQuery PHP',
 		'Bootstrap Materialize',
 		'Jade Liquid',
-		'Wordpress Shopify', 
+		'Wordpress Shopify',
 		'Photoshop Illustrator',
 		'Node Gulp Git',
 		'Responsive Design'
 	],
-	summary : 'Junior Web Developer specializing in front end development. Experience with responsive design, website optimization, object oriented programming, MVC/MV* design pattern, client-side scripting and test-driven developement.'+
+	summary : 'Web Developer specializing in front end development. Familiar with responsive design, website optimization, object oriented programming, MVC/MV* design pattern, client-side scripting and test-driven developement.'+
 	'Well versed in HTML5, CSS3, Javascript, jQuery, Photoshop and Illustrator.',
-	interest : ['Musical instruments',
-		'Music software and technology',
-		'Martial Arts',
-		'Handlettering',
+	interest : ['Music technology',
+		'Martial arts',
 		'Design'
 		]
 	},
@@ -147,7 +145,7 @@
 	}
 
 	// method loops through the portfolio array that's attached to the bio object
-	// and creates a new instance of the Portfolio Object  
+	// and creates a new instance of the Portfolio Object
 	bio.portfolio.init = function() {
 		$('#portfolio').append(portfolioContainer);
 		var portfolioSection;
@@ -170,7 +168,7 @@
 
 	bio.skills.display = function() {
 		var skillsDone = skillsContainer.replace('%data%', skillsList),
-	
+
 		skilledIt, skillInit;
 		$('#skills').append(skillsDone);
 		for(var i = 0; i < bio.skills.length; i++){
@@ -208,7 +206,7 @@
   	//close nav list when linkn is clicked
   	$('ul.nav-list li a.page-scroll').bind('click', function(event) {
   		$( '#toggle' ).trigger( 'click' );
-  	});  	
+  	});
 
   	// hides the menu close button on initialize
     //$('i.menu-close').toggle('show');
@@ -236,7 +234,7 @@
     // 2/5th of window width to be used in dialog method
  	var dWidth = $(window).width() * 0.8;
 
- 	// jqeury modal window 
+ 	// jqeury modal window
     $( "#dialog" ).dialog({
 	    autoOpen: false,
 	    modal: true,
