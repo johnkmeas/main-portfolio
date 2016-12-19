@@ -48,7 +48,7 @@
 			'map application site'
 			],
 		[	'img/images/images/portfolio-thumbnail_04.jpg',
-			'https://johnkmeas.github.io/main-portfolio/',
+			'https://github.com/johnkmeas/main-portfolio/tree/gh-pages',
 			'I built this single page site with no CSS frameworks. The majority of the content is dynamically added to the DOM using jQuery. It incorporates some original illustrations to represent my personality. I thought it would be fun to use part of a nintendo controller for the menu icon because it resembles the familiar hamburger icon.',
 			'HTML | CSS/SASS | Javascript',
 			'jQuery',
